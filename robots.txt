@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+
+Disallow: /wp.calixdesarrollos.com.ar/
+Disallow: /rod.calixdesarrollos.com.ar/
