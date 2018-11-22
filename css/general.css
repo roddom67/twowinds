@@ -42,6 +42,11 @@ main{
 	--light-gray: #f2f2f2;
 	--dark-gray: #666;
 	--black: #393839;
+	
+	--paua:#282757;
+	--paua-90: rgba(54,52,92,.9);
+	--chatelle: #b5b1bb;
+	
 }
 
 .overflow{
@@ -49,13 +54,37 @@ main{
 }
 
 h1{
-	font-size: 5.3em;
-	line-height: 5.5rem;
-	font-weight: 100;
+	font-size:1.6rem;
+	font-weight: 600;
 	color:  var(--white);
+	margin-bottom:5.5rem;
+	text-align: center;
 }
 article h1{
 	margin-bottom: 1.5rem;
+}
+h2{
+	font-size:4.3rem;
+	font-weight: 100;
+	margin-bottom:5.5rem;
+	text-align: center;
+	line-height: 5.3rem;
+}
+p{
+	font-size: 1.7em;
+	line-height: 2.7rem;
+	font-weight: 200;
+	color:var(--chatelle);
+}
+
+.txtBold{
+	color:var(--paua);
+}
+.backPaua{
+	background: var(--chatelle);
+}
+.backPaua p{
+	color:var(--paua);
 }
 
 /* Home */
@@ -155,6 +184,9 @@ article h1{
 	top: 1px;
 	right: 40px;
 	font-weight: 300;
+}
+.navGris .navbar-toggler strong{
+	color: var(--dark-gray);
 }
 .navbar-toggler.toggled strong{
 	color: var(--black);
@@ -301,7 +333,7 @@ article h1{
 /* Footer */
 
 footer{
-	background: var(--light-gray);
+	background: var(--paua);
 	padding: 60px 0 50px;
 }
 footer .addressFooter{
@@ -352,6 +384,26 @@ footer .legalesArea li small{
 
 
 /* Internals Home page */
+.header h1{
+	padding:9.0rem 0 1.5rem;
+}
+.header h2{
+	padding:0 0 1.5rem;
+}
+.header p{
+	padding:0 0 1.5rem;
+	font-size:4.3rem;
+	line-height: inherit;
+	text-align:center;
+}
+/*.header a{
+	margin: 0 auto;
+	display: inline-block;
+	left:50%;
+	position: relative;
+	transform: translate(-50%,0);
+}*/
+
 .headerImage{
 	height: 100vh;
 	background-position:center;
@@ -395,32 +447,20 @@ footer .legalesArea li small{
 	text-shadow: 0 0 3px rgba(0,0,0,.5);
 }
 
-
-
-.header h1{
-	padding:9.0rem 0 1.5rem;
-	font-size:4.3rem;
-	font-weight: 100;
-	margin-bottom:5.5rem;
-	border-bottom:1px solid var(--dark-gray)
-}
-
-
-section p{
-	font-size: 1.7em;
-	line-height: 2.7rem;
-	font-weight: 200;
-}
 section a{
 	font-size:1.5em;
 	font-weight:600;
 	text-transform: uppercase;
 	color: #ccc;
 }
+
 .textoDestacado p{
 	font-size:4.7em;
 	line-height: 2em;
 	padding: 0 2em;
+}
+.textBold{
+	color: 
 }
 .textGray{
 	padding: 14.0em 0;
@@ -533,8 +573,9 @@ section a{
 }
 .descargarBrochure a{
 	padding: 20px 40px;
-	background:#f2f2f2;
+	background:var(--chatelle);
 	display: inline-block;
+	color:var(--paua);
 }
 
 /* text Area */
@@ -577,7 +618,7 @@ section a{
 }
 
 .navSectionArea{
-	padding:0 0 10.0rem;
+	padding:10.0rem 0;
 }
 .navSectionArea article ul{
 	margin:0 60px;
@@ -606,7 +647,7 @@ section a{
 .navSectionArea article ul li div{
 	position:relative;
 	z-index: 2;
-	background: rgba(54,52,92,.8);
+	background: var(--paua-90);
 	padding: 30px;
 }
 .navSectionArea article ul li div p{

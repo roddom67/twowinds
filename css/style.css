@@ -1,20 +1,13 @@
 /* Calix Barrancas */
 
-:root{
-	--main-color: #0fb11b;
-	--white: #fff;
-	--bg-gray: #dcdee0;
-	--black:#393839;
-}
-
 /* Header */
 .navbar-brand span{
 	width: 134px;
 	height:50px;
 	display:none;
 }
-.navbar-brand span.logoGris{
-	
+.el-barrio .navbar-brand span.logoGris{
+	display:block;
 }
 .el-proyecto .navbar-brand span.logoBlanco{
 	display:block;
@@ -73,6 +66,29 @@
 .el-proyecto .headerImage{
 	background-image: url(../images/elProyecto/el-proyecto.jpg);
 }
+.frenteEdificio{
+padding-bottom: 0;
+	overflow: hidden;
+}
+.galeriaArea{
+	padding:0;
+	position: relative;
+}
+.galeriaArea::after{
+	content:'';
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	bottom:0;
+	left: 0;
+	z-index: 1;
+	background:var(--white);
+}
+.galeriaArea .container-fluid{
+	position:relative;
+	z-index: 5;
+}
+
 .twoImagesMiddleTextArea li:nth-child(2){
 	background:var(--main-color);
 }
@@ -84,15 +100,11 @@
 
 /* El Barrio */
 
-.el-barrio .headerImage{
-	background-image: url(../images/imagen_el_barrio.jpg);
+.galeria-el-barrio ul{
+	display:flex;
+	flex-wrap:wrap;
 }
-.boxUnBarrio:after{
-	background-image: url(../images/universidad-di-tella.jpg);
-}
-.boxDosBarrio:after{
-	background-image: url(../images/plantas.jpg);
-}
+
 
 /* Background White */
 .plantaArea h4,
