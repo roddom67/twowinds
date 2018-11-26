@@ -99,11 +99,118 @@ padding-bottom: 0;
 }
 
 /* El Barrio */
-
-.galeria-el-barrio ul{
-	display:flex;
-	flex-wrap:wrap;
+.el-barrio .header{
+	padding-bottom: 14.0em;
 }
+.galeria-el-barrio ul{
+	display:grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"image1 image1 image2 image3"
+		"image1 image1 image4 image5"
+		"image6 image7 image8 image8"
+		"texto1 texto1 image9 image9"
+		"image10 image11 image12 image12";
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+}
+.galeria-el-barrio ul li{
+	overflow: hidden;
+}
+.galeria-el-barrio .image1{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+.galeria-el-barrio .image2{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+
+}
+.galeria-el-barrio .image3{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 2;
+
+}
+.galeria-el-barrio .image4{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+.galeria-el-barrio .image5{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+}
+.galeria-el-barrio .image6{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 4;
+
+}
+.galeria-el-barrio .image7{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+
+}
+.galeria-el-barrio .image8{
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 3;
+	grid-row-end: 4;
+
+}
+.galeria-el-barrio .image9{
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 4;
+	grid-row-end: 5;
+
+}
+.galeria-el-barrio .image10{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 5;
+	grid-row-end: 6;
+
+}
+.galeria-el-barrio .image11{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 5;
+	grid-row-end: 6;
+
+}
+.galeria-el-barrio .image12{
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 5;
+	grid-row-end: 6;
+
+}
+.galeria-el-barrio .texto1{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	padding: 70px;
+	text-align:left;
+
+}
+
+
 
 
 /* Background White */

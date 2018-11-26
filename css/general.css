@@ -1,6 +1,8 @@
 /*GLOBAL FRAMEWORK V1.9 - AUTHORIZED PERSONNEL ONLY - EYES ONLY - W3C VALID*/
 * {margin: 0px; padding: 0px; border: 0px none; outline: 0px;}
+
 BODY {font: 100% 'Libre Franklin', sans-serif; color: #333; background: #fff; height:100%; min-height:100%;}
+
 P, TD, TH, DIV, SPAN, LI, BLOCKQUOTE {margin:0; padding:0;}
 H1, H2, H3, H4, H5, H6 {font-weight: normal; font-size: 100%; display: block}
 ARTICLE, ASIDE, AUDIO, CANVAS, FIGURE, FIGCAPTION, FOOTER, HEADER, NAV ,SECTION {display: block}
@@ -54,6 +56,7 @@ main{
 }
 
 h1{
+	font-family: 'Work Sans', sans-serif;
 	font-size:1.6rem;
 	font-weight: 600;
 	color:  var(--white);
@@ -64,13 +67,15 @@ article h1{
 	margin-bottom: 1.5rem;
 }
 h2{
+	font-family: 'Spectral', serif;
 	font-size:4.3rem;
-	font-weight: 100;
+	font-weight: bold;
 	margin-bottom:5.5rem;
 	text-align: center;
 	line-height: 5.3rem;
 }
 p{
+	font-family: 'Spectral', serif;
 	font-size: 1.7em;
 	line-height: 2.7rem;
 	font-weight: 200;
@@ -967,6 +972,32 @@ section a{
 .contactFormArea .buttonArea{
 	overflow: hidden;
 	padding-top: 1.5rem;
+}
+.disponibilidadBanner{
+	padding-bottom:14.0em;
+}
+
+.disponibilidadBanner .banner{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content:center;
+}
+.disponibilidadBanner .spanImg{
+	width:275px;
+	display: block;
+}
+.disponibilidadBanner .banner div{
+	padding:40px;
+	background: var(--chatelle);
+	width: 540px;
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction:column;
+	justify-content:space-between;
+}
+.disponibilidadBanner .banner div h3{
+	font-size:33px;
+	color: var(--white); 
 }
 
 .disponibilidadArea{

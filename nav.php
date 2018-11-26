@@ -21,18 +21,22 @@
       <li class="nav-item <?php if(isset($activoEP)){ echo 'active'; } ?>">
         <a class="nav-link" href="el-proyecto.php" title="El Proyecto">El Proyecto</a>
       </li>
-      <li class="nav-item <?php if(isset($activoD)){ echo 'active'; } ?>">
-        <a class="nav-link " href="disponibilidad.php" title="Las Unidades">Las Unidades</a>
+      <li class="nav-item <?php if(isset($activoA)){ echo 'active'; } ?>">
+        <a class="nav-link " href="amenities.php" title="Amenities">Amenities</a>
       </li>
-      
-      <li class="nav-item <?php if(isset($activoC)){ echo 'active'; } ?>">
-        <a class="nav-link " href="contacto.php" title="Contacto">Contacto</a>
+
+      <li class="nav-item <?php if(isset($activoU)){ echo 'active'; } ?>">
+        <a class="nav-link " href="unidades.php" title="Unidades">Unidades</a>
+      </li>
+      <li class="nav-item <?php if(isset($activoD)){ echo 'active'; } ?>">
+        <a class="nav-link " href="disponibilidad.php" title="Disponibilidad">Disponibilidad</a>
       </li>
       <li class="nav-item <?php if(isset($activoEE)){ echo 'active'; } ?>">
         <a class="nav-link " href="el-equipo.php" title="El Equipo">El Equipo</a>
       </li>
-      <li class="nav-item otrosCalix">
-        <a class="nav-link " href="../" title="Otros Calix">Otros Calix</a>
+      
+      <li class="nav-item <?php if(isset($activoC)){ echo 'active'; } ?>">
+        <a class="nav-link " href="contacto.php" title="Contacto">Contacto</a>
       </li>
     </ul>
   </div>
