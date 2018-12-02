@@ -46,8 +46,43 @@
 	transform: translate(-50%,0);
 	background:#fff;
 }
+.index .mainBox h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight:100;
+	font-size:14.5rem;
+	color:var(--paua);
+	padding:3.0rem 0;
+}
+.index .mainBox .logo{
+	width: 245px;
+	display:block;
+	margin: 0 auto;
+}
+.index .mainBox p{
+	padding-top:1.5rem;
+	position: relative;
+}
+.index .mainBox p:before{
+	content: '';
+	border-top: 1px solid white;
+	width: 15%;
+	position: absolute;
+	top:0;
+	left:50%;
+	transform: translate(-50%,0);
+}
 
-
+.index .textoDestacado h4{
+	padding:50px 0 30px;
+}
+.index .galeriaArea{
+	padding:6.0em 0;
+	position: relative;
+}
+.index .textGray{
+	padding:6.0em 0 0;
+	position: relative;
+}
 
 .textImageArea.bgColor:before{
 	background-color: var(--main-color);
@@ -71,9 +106,10 @@ padding-bottom: 0;
 	overflow: hidden;
 }
 .galeriaArea{
-	padding:0;
+	padding:14.0em 0;
 	position: relative;
 }
+
 .galeriaArea::after{
 	content:'';
 	width: 100%;
@@ -102,6 +138,7 @@ padding-bottom: 0;
 .el-barrio .header{
 	padding-bottom: 14.0em;
 }
+
 .galeria-el-barrio ul{
 	display:grid;
 	grid-template-columns: 25% 25% 25% 25%;
@@ -210,7 +247,15 @@ padding-bottom: 0;
 
 }
 
-
+.galeria-el-barrio h3{
+	font-family: 'Work Sans', sans;
+	font-size: 14px;
+	color: white;
+	padding-bottom:60px;
+}
+.galeria-el-barrio p + p{
+	padding-top:45px;
+}
 
 
 /* Background White */

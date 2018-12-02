@@ -19,7 +19,7 @@
 				?>
   				<article class="mainBox">
   					<div>
-  						<span><img src="images/twowinds-logo.png" alt="Two Winds" title="Two Winds"></span>
+  						<span class="logo"><img src="images/twowinds-logo.png" alt="Two Winds" title="Two Winds"></span>
    					<h1>URQUIZA</h1>
   						<p>Mi lugar en el mundo</p>
  					</div>
@@ -31,8 +31,9 @@
 		<section class="textGray">
  			<div class="container-fluid">
   				<article class="textoDestacado">
-  					<p>Lo diseñamos pensando en darte la clase de espacio que necesitás. Calix Barrancas te acerca a todo lo que te importa, para hacerte la vida más fácil, más cómoda.</p>
-  					<h4><a href="" title="El proyecto">El proyecto</a></h4>
+  					<p><strong>El desarrollo y la transformación que buscabas están más cerca tuyo de lo que creías, pronto vas a poder disfrutar eso que tanto amás de Villa Urquiza en una experiencia barrial mejorada, enriquecida por el confort y los atributos de un complejo residencial moderno, seguro, funcional y excelentemente ubicado.</strong></p>
+  					<h4><a href="" title="El proyecto" class="link">El proyecto</a></h4>
+  					<h5><a href="" title="Ver video" class="video videoLink">Ver video<i class="fas fa-play-circle"></i></a></h5>
   				</article>
   			</div>
  		</section>
@@ -42,9 +43,9 @@
  				<article>
  					<ul>
  						<li class="sliderLeft">
- 							<h2>Lorem ipsum dolor sit amet lorem ipsum</h2>
- 							<p>Lo diseñamos pensando en darte la clase de espacio que necesitás. Calix Barrancas te acerca a todo lo que te importa, para hacerte la vida más fácil, más cómoda.</p>
- 							<a href="" title="Unidades">Unidades</a>
+ 							<h2>Mi lugar en el mundo</h2>
+ 							<p>Este no es sólo un desarrollo inmobiliario, es un proyecto ideado especialmente para realzar el valor de las cosas que más apreciás: tu ciudad, pero más que nada tu barrio, tu edificio, pero más bien tu espacio, tu departamento, pero principalmente ese sitio al que llamás Mi Lugar en el Mundo.</p>
+ 							<a href="" title="Unidades" class="link">Unidades</a>
  						</li>
  			
  						<li class="slider">
@@ -74,9 +75,9 @@
  					<span class="spanImg">
  						<img src="images/amenities/amenities.jpg" alt"Amenities" title="Amenities">
  					</span>
- 					<div class="boxWhite">
- 						<h2>Lo diseñamos pensando en darte la clase de espacio que necesitás. Calix Barrancas </h2>
- 						<a href="" title="Unidades">Unidades</a>
+ 					<div class="boxOverImage">
+ 						<h2>Preparate para experimentar la comodidad en su estado más completo</h2>
+ 						<a href="" title="Unidades" class="link">Unidades</a>
  					</div>
  				</article>
  			</div>
@@ -104,9 +105,9 @@
  						</li>
  						
  						<li class="sliderRight">
- 							<h2>Lorem ipsum dolor sit amet lorem ipsum</h2>
- 							<p>Lo diseñamos pensando en darte la clase de espacio que necesitás. Calix Barrancas te acerca a todo lo que te importa, para hacerte la vida más fácil, más cómoda.</p>
- 							<a href="" title="Unidades">Unidades</a>
+ 							<h2>Un barrio único</h2>
+ 							<p>Villa Urquiza en una experiencia barrial insuperable. Su atmósfera cálida y relajada se enriquece con múltiples espacios verdes, una variada oferta gastronómica, educativa y comercial, y accesos rápidos a todos los medios de transporte. </p>
+ 							<a href="" title="El barrio" class="link">El barrio</a>
  						</li>
  					</ul>
  				</article>

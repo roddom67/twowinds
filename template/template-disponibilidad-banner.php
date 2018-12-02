@@ -7,9 +7,8 @@
 				</span>
 				<div>
 					<h3>Encontrá un departamento a tu medida</h3>
-					<a href="" title="Disponibilidad">Disponibilidad</a>				
+					<span><a href="" title="Disponibilidad" class="link">Disponibilidad</a></span>				
 				</div>
-
 			</div>
 		</article>
 	</div>

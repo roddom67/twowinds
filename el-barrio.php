@@ -19,10 +19,10 @@
   				<?php
 					include("nav.php")
 				?>
-  				<article class="">
+  				<article class="textoDestacado">
   					<h1>El Barrio</h1>
   					<h2 class="txtBold">El corazón de Villa Urquiza</h2>
-  					<p>Lo diseñamos pensando en darte la clase de espacio que necesitás. Calix Barrancas te acerca a todo lo que te importa, para hacerte la vida más fácil, más cómoda.</p>
+  					<p>Two Winds Urquiza, por supuesto, está ubicado en el palpitante centro de Villa Urquiza, un lugar especial en donde se conjuga lo más tradicional de la zona con elementos y facilidades de tinte más moderno y cosmopolita. </p>
   				</article>
  			</div>
  		</section>
@@ -33,42 +33,42 @@
   					<ul>
   						<li class="image1">
   							<span class="spanImg">
-  								<img src="images/barrio/galeria1.jpg" alt="1" title="">
+  								<img src="images/barrio/imagen_barrio_1.jpg" alt="1" title="">
   							</span>
   						</li>
   						<li class="image2">
   							<span class="spanImg">
-  								<img src="images/barrio/galeria1.jpg" alt="2" title="">
+  								<img src="images/barrio/imagen_barrio_2.jpg" alt="2" title="">
   							</span>
   						</li>
   						<li class="image3">
   							<span class="spanImg">
-  								<img src="images/barrio/galeria1.jpg" alt="3" title="">
+  								<img src="images/barrio/imagen_barrio_3.jpg" alt="3" title="">
   							</span>
   						</li>
   						<li class="image4">
   							<span class="spanImg">
-  								<img src="images/barrio/galeria1.jpg" alt="4" title="">
+  								<img src="images/barrio/imagen_barrio_4.jpg" alt="4" title="">
   							</span>
   						</li>
   						<li class="image5">
   							<span class="spanImg">
-  								<img src="images/barrio/galeria1.jpg" alt="5" title="">
+  								<img src="images/barrio/imagen_barrio_5.jpg" alt="5" title="">
   							</span>
   						</li>
   						<li class="image6">
   							<span class="spanImg">
-  								<img src="images/barrio/galeria1.jpg" alt="6" title="">
+  								<img src="images/barrio/imagen_barrio_6.jpg" alt="6" title="">
   							</span>
   						</li>
   						<li class="image7">
   							<span class="spanImg">
-  								<img src="images/barrio/galeria1.jpg" alt="7" title="">
+  								<img src="images/barrio/imagen_barrio_7.jpg" alt="7" title="">
   							</span>
   						</li>
   						<li class="image8">
   							<span class="spanImg">
-  								<img src="images/barrio/galeria2.jpg" alt="8" title="">
+  								<img src="images/barrio/imagen_barrio_8.jpg" alt="8" title="">
   							</span>
   						</li>
   						<li class="texto1">
@@ -78,22 +78,22 @@
   						</li>
   						<li class="image9">
   							<span class="spanImg">
-  								<img src="images/barrio/galeria1.jpg" alt="10" title="">
+  								<img src="images/barrio/imagen_barrio_9.jpg" alt="10" title="">
   							</span>
   						</li>
   						<li class="image10">
   							<span class="spanImg">
-  								<img src="images/barrio/galeria1.jpg" alt="11" title="">
+  								<img src="images/barrio/imagen_barrio_10.jpg" alt="11" title="">
   							</span>
   						</li>
   						<li class="image11">
   							<span class="spanImg">
-  								<img src="images/barrio/galeria1.jpg" alt="12" title="">
+  								<img src="images/barrio/imagen_barrio_11.jpg" alt="12" title="">
   							</span>
   						</li>
   						<li class="image12">
   							<span class="spanImg">
-  								<img src="images/barrio/galeria2.jpg" alt="13" title="">
+  								<img src="images/barrio/imagen_barrio_12.jpg" alt="13" title="">
   							</span>
   						</li>
   					</ul>

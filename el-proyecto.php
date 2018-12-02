@@ -23,8 +23,8 @@
   					<div>
    					<h1 class="hidden">El Proyecto</h1>
    					<h2 class="txtBold">Two Winds te eleva</h2>
-  						<a href="" title="Ver video" class="videoLink">Ver video <i class="fas fa-play-circle"></i></a>
-  						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+  						<a href="" title="Ver video" class="video videoLink">Ver video<i class="fas fa-play-circle"></i></a>
+  						<p>Sus 8.336 m2 de confort y estética se encuentran repartidos a lo alto en una moderna estructura de 13 pisos. </p>
  					</div>
   				</article>
  			</div>
