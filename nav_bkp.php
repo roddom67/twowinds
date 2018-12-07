@@ -26,13 +26,13 @@
       </li>
 
       <li class="nav-item <?php if(isset($activoU)){ echo 'active'; } ?>">
-        <a class="nav-link " href="" title="Unidades">Unidades</a>
+        <a class="nav-link " href="unidades.php" title="Unidades">Unidades</a>
       </li>
       <li class="nav-item <?php if(isset($activoD)){ echo 'active'; } ?>">
-        <a class="nav-link " href="" title="Disponibilidad">Disponibilidad</a>
+        <a class="nav-link " href="disponibilidad.php" title="Disponibilidad">Disponibilidad</a>
       </li>
       <li class="nav-item <?php if(isset($activoEE)){ echo 'active'; } ?>">
-        <a class="nav-link " href="" title="El Equipo">El Equipo</a>
+        <a class="nav-link " href="el-equipo.php" title="El Equipo">El Equipo</a>
       </li>
       
       <li class="nav-item <?php if(isset($activoC)){ echo 'active'; } ?>">

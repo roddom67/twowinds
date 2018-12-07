@@ -1,4 +1,8 @@
-/* Calix Barrancas */
+/* Two WInds */
+.container-fluid{
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
 
 /* Header */
 .navbar-brand span{
@@ -6,6 +10,7 @@
 	height:50px;
 	display:none;
 }
+.amenities .navbar-brand span.logoGris,
 .el-barrio .navbar-brand span.logoGris{
 	display:block;
 }
@@ -37,7 +42,7 @@
 }
 .index .headerImage:after{
 	content:'';
-	width: calc( 100% - 29rem);
+	width: calc( 100% - 10rem);
 	height: 80px;
 	z-index: 5;
 	position: absolute;
@@ -106,11 +111,12 @@ padding-bottom: 0;
 	overflow: hidden;
 }
 .galeriaArea{
-	padding:14.0em 0;
-	position: relative;
+	padding:14.0em 0 0;
 }
-
-.galeriaArea::after{
+.backPaua{
+	position:relative;
+}
+.backPaua.backPauaTop::after{
 	content:'';
 	width: 100%;
 	height: 50%;
@@ -120,7 +126,15 @@ padding-bottom: 0;
 	z-index: 1;
 	background:var(--white);
 }
-.galeriaArea .container-fluid{
+.backPaua.backPauaBottom::after{
+	bottom:auto;
+	top:0;
+}
+.bx-wrapper{
+	background:transparent;
+}
+
+.backPaua .container-fluid{
 	position:relative;
 	z-index: 5;
 }
@@ -257,6 +271,68 @@ padding-bottom: 0;
 	padding-top:45px;
 }
 
+/* El proyecto */
+.el-proyecto .videoLink{
+	color:#fff;
+}
+.edificioArea > ul{
+	display:flex;
+	flex-wrap:nowrap;
+	width:100%;
+	padding-bottom:5rem;
+
+}
+.edificioArea > ul > li{
+	width:44%;
+}
+.edificioArea > ul > li.col2{
+	width: 12%;
+}
+.edificioArea .col1 li{
+	text-align:right;
+	padding: 20px;
+}
+.edificioArea .col3 li{
+	text-align:left;
+	padding: 20px;
+}
+.edificioArea small{
+	color: var(--paua);
+	font-size: 14px;
+	font-weight:bold;
+	font-family: 'Work Sans', sans;
+	line-height: 23px;
+	padding-top:60px;
+	display:block;
+}
+.edificioArea p + small{
+	padding:0;
+}
+.edificioArea p{
+	color: white;
+	font-size: 24px;
+	line-height:36px;
+}
+.edificioArea .col3 ul{
+	display:flex;
+	flex-wrap:nowrap;
+	flex-direction:column;
+	justify-content:space-between;
+	height: 100%;
+}
+.el-proyecto .galeriaArea{
+	padding-bottom:0;
+}
+
+/* Amenties */
+.listAmenities{
+	display:flex;
+	flex-wrap:wrap;
+}
+.listAmenities li{
+	width: 33.3333%;
+	padding:40px;
+}
 
 /* Background White */
 .plantaArea h4,

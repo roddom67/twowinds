@@ -92,6 +92,7 @@ p{
 .backPaua p{
 	color:var(--paua);
 }
+
 .bx-wrapper .bx-controls-direction a{
 	width: 60px;
 	padding:0;
@@ -293,7 +294,7 @@ p{
 .menu-toggle-inner:before {
     width: 16px;
     height: 2px;
-    background-color:  var(--dark-gray);
+    background-color:var(--white);
     border-radius: 0;
     position: absolute;
     transition-property: transform;
@@ -311,13 +312,13 @@ p{
 .menu-toggle.toggled .menu-toggle-inner, 
 .menu-toggle.toggled .menu-toggle-inner:before, 
 .menu-toggle.toggled .menu-toggle-inner:after {
-    background-color: var(--black);
+    background-color: var(--white);
     
 }
 .navGris .menu-toggle .menu-toggle-inner, 
 .navGris .menu-toggle .menu-toggle-inner:before, 
 .navGris .menu-toggle .menu-toggle-inner:after {
-    background-color: var(--dark-gray);
+    background-color: var(--white);
     
 }
 .menu-toggle .menu-toggle-inner {
@@ -772,6 +773,8 @@ section .video i{
 }
 .navSectionArea article ul li div p{
 	color: var(--white);
+	font-size:28px;
+	padding-bottom: 40px;
 }
 
 /* 3 Images Area */

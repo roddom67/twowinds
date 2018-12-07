@@ -18,16 +18,16 @@
   				<li class="col-2 col-sm-2">
   					<ul>
   						<li>
-  							<a href="" title="Home">Home</a>
+  							<a href="index.php" title="Home">Home</a>
   						</li>
   						<li>
-  							<a href="" title="Barrio">Barrio</a>
+  							<a href="el-barrio.php" title="Barrio">Barrio</a>
   						</li>
   						<li>
-  							<a href="" title="Barrio">El proyecto</a>
+  							<a href="el-proyecto.php" title="Barrio">El proyecto</a>
   						</li>
   						<li>
-  							<a href="" title="Barrio">Amenities</a>
+  							<a href="amenities.php" title="Barrio">Amenities</a>
   						</li>
   						<li>
   							<a href="" title="Barrio">Unidades</a>

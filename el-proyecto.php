@@ -34,17 +34,45 @@
 	
 		<section class="textGray frenteEdificio backPaua">
  			<div class="container-fluid">
-  				<article class="">
-  					<div>
-  						IMAGEN EDIFICIO
-  					</div>
+  				<article class="edificioArea">
+  					<ul>
+  						<li class="col1">
+  							<ul>
+  								<li>
+  									<small>90 unidades<br>funcionales<br>conformadas por</small>
+  								</li>
+  								<li>
+  									<p>24 monoambientes.<br>38 deptos de 2 Ambientes.<br>25 deptos de 3 Ambientes.<br>4 dúplex.</p>
+  								</li>
+  							</ul>
+  						</li>
+  						<li class="col2">
+  							<span class="spanImg">
+  								<img src="images/elProyecto/edificio.png" alt="Edificio" title="Edificio">
+  							</span>
+  						</li>
+  						<li class="col3">
+  							<ul>
+  								<li>
+  									<small>Piso 17</small>
+  									<p>Terraza con<br>Parrilla y Piletas</p>
+  								</li>
+  								<li>
+  									<small>Piso 1</small>
+  									<p>Sum y Gym</p>
+  									<small>Subsuelo 1 y 2</small>
+  									<p>95 Cocheras</p>
+  								</li>
+  							</ul>
+  						</li>
+  					</ul>
   					<h2 class="txtBold">Una experiencia de altura</h2>
   				</article>
   			</div>
  		</section>
  		
  		
- 		<section class="galeriaArea backPaua">
+ 		<section class="galeriaArea backPaua backPauaTop">
  			<div class="container-fluid">
  				<article>
  					<ul>

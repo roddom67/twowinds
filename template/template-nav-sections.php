@@ -8,7 +8,7 @@
 							</span>
 							<div>
 								<p>Vestibulum maximus arcu vel lectus accumsan,</p>
-								<a href="el-barrio.php" title="Barrio">Barrio</a>
+								<a href="el-barrio.php" title="Barrio" class="link">Barrio</a>
 							</div>
 						</li>
 						<li>
@@ -17,7 +17,7 @@
 							</span>
 							<div>
 								<p>Vestibulum maximus arcu vel lectus accumsan,</p>
-								<a href="unidades.php" title="Unidades">Unidades</a>
+								<a href="unidades.php" title="Unidades" class="link">Unidades</a>
 							</div>
 						</li>
 						<li>
@@ -26,7 +26,7 @@
 							</span>
 							<div>
 								<p>Vestibulum maximus arcu vel lectus accumsan,</p>
-								<a href="amenities.php" title="Amenities">Amenities</a>
+								<a href="amenities.php" title="Amenities" class="link">Amenities</a>
 							</div>
 						</li>
 					</ul>
