@@ -332,8 +332,71 @@ padding-bottom: 0;
 .listAmenities li{
 	width: 33.3333%;
 	padding:40px;
+	text-align:center;
+}
+.listAmenities li .spanImg{
+	width:70px;
+	display:block;
+	margin: 0 auto 20px;
+}
+.listAmenities li h3{
+	font-size:16px;
+	font-weight:bold;
+	color:var(--paua);
+	font-family: 'Work Sans', sans;
+	text-transform:uppercase;
+	padding-bottom:20px;
+}
+.listAmenities li p{
+	font-size:17px;
+	line-height:21px;
+	color: var(--paua);
 }
 
+.serviciosArea ul{
+	display:flex;
+	flex-wrap:wrap;
+}
+.serviciosArea ul li:first-child{
+	width:100%;
+}
+.serviciosArea ul li{
+	width:50%;
+}
+.serviciosArea h3{
+	color:white;
+	font-size: 14px;
+	font-family: 'Work Sans', sans;
+	text-transform: uppercase;
+	padding-bottom:40px;
+}
+.serviciosArea p{
+	font-size:41px;
+	line-height: 51px;
+}
+.serviciosArea ul li ul{
+	flex-direction:column;
+}
+
+.serviciosArea .listadoPunto{
+	
+}
+.serviciosArea .listadoPunto li{
+	width:100%;
+	color:var(--paua);
+	font-family: 'Spectral', serif;
+	font-size: 1.7em;
+	line-height: 2.4rem;
+	font-weight: 200;
+	padding-bottom:25px;
+}
+.serviciosArea .listadoPunto li:before{
+	content: '·';
+	font-weight:900;
+	font-size:20px;
+	position: relative;
+	padding-right:10px;
+}
 /* Background White */
 .plantaArea h4,
 .textArea h2,

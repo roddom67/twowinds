@@ -33,45 +33,45 @@
  					<ul class="listAmenities">
  						<li>
  							<span class="spanImg">
- 								<img src="" alt="Pileta" title="Pileta">
+ 								<img src="images/amenities/piscina.png" alt="Pileta" title="Pileta">
  							</span>
- 							<h3>Pileta</h3>
+ 							<h3>Piscina</h3>
  							<p>Para disfrutar del aire libre en los días de calor, el edificio cuenta con una pis cina descubierta en la última planta.</p>
  						</li>
  						<li>
  							<span class="spanImg">
- 								<img src="" alt="Pileta" title="Pileta">
+ 								<img src="images/amenities/parrilla.png" alt="Parrilla" title="Parrilla">
  							</span>
- 							<h3>Pileta</h3>
- 							<p>Para disfrutar del aire libre en los días de calor, el edificio cuenta con una pis cina descubierta en la última planta.</p>
+ 							<h3>Parrilla</h3>
+ 							<p>En la terraza del edificio se pueden encontrar parrillas listas para usar a disposición de todos los residentes.</p>
  						</li>
  						<li>
  							<span class="spanImg">
- 								<img src="" alt="Pileta" title="Pileta">
+ 								<img src="images/amenities/gym.png" alt="Gym" title="Gym">
  							</span>
- 							<h3>Pileta</h3>
- 							<p>Para disfrutar del aire libre en los días de calor, el edificio cuenta con una pis cina descubierta en la última planta.</p>
+ 							<h3>Gym</h3>
+ 							<p>Totalmente equipado, el gimnasio de Two Winds Urquiza es un espacio ideal para mantenerse en forma. </p>
  						</li>
  						<li>
  							<span class="spanImg">
- 								<img src="" alt="Pileta" title="Pileta">
+ 								<img src="images/amenities/sum.png" alt="Sum" title="Sum">
  							</span>
- 							<h3>Pileta</h3>
- 							<p>Para disfrutar del aire libre en los días de calor, el edificio cuenta con una pis cina descubierta en la última planta.</p>
+ 							<h3>Sum</h3>
+ 							<p>El edificio cuenta con un salón de usos múltiples que puede ser reservado para distintos eventos.</p>
  						</li>
  						<li>
  							<span class="spanImg">
- 								<img src="" alt="Pileta" title="Pileta">
+ 								<img src="images/amenities/sum.png" alt="Laundry" title="Laundry">
  							</span>
- 							<h3>Pileta</h3>
- 							<p>Para disfrutar del aire libre en los días de calor, el edificio cuenta con una pis cina descubierta en la última planta.</p>
+ 							<h3>Laundry</h3>
+ 							<p>Disponible las 24 horas, el Laundry de Two Winds Urquiza tiene todo lo necesario para brindar un servicio de gran valor. </p>
  						</li>
  						<li>
  							<span class="spanImg">
- 								<img src="" alt="Pileta" title="Pileta">
+ 								<img src="images/amenities/cocheras.png" alt="Cocheras" title="Cocheras">
  							</span>
- 							<h3>Pileta</h3>
- 							<p>Para disfrutar del aire libre en los días de calor, el edificio cuenta con una pis cina descubierta en la última planta.</p>
+ 							<h3>Cocheras</h3>
+ 							<p>Two Winds Urquiza tiene 105 espacios dedicados de estacionamiento ubicados en la planta baja y los tres subsuelos del edificio. </p>
  						</li>
  					</ul>
  				</article>
@@ -108,6 +108,8 @@
  					<ul>
  						<li>
  							<h3>Servicios</h3>
+ 						</li>
+ 						<li>
  							<p>Preparate<br>para experimentar<br>la comodidad en su<br>estado más completo. </p>
  						</li>
  						<li>
