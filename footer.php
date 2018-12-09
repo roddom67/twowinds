@@ -30,16 +30,16 @@
   							<a href="amenities.php" title="Barrio">Amenities</a>
   						</li>
   						<li>
-  							<a href="" title="Barrio">Unidades</a>
+  							<a href="unidades.php" title="Barrio">Unidades</a>
   						</li>
   						<li>
-  							<a href="" title="Barrio">Planos</a>
+  							<a href="el-barrio.php" title="Barrio">Planos</a>
   						</li>
   						<li>
-  							<a href="" title="Barrio">El equipo</a>
+  							<a href="el-equipo.php" title="Barrio">El equipo</a>
   						</li>
   						<li>
-  							<a href="" title="Barrio">Contacto</a>
+  							<a href="contacto.php" title="Barrio">Contacto</a>
   						</li>
   					</ul>
   				</li>

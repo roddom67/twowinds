@@ -82,7 +82,9 @@ p{
 	font-weight: 200;
 	color:var(--chatelle);
 }
-
+.pdBotton{
+	padding-bottom:14.0em !important;
+}
 .txtBold{
 	color:var(--paua);
 }
@@ -190,6 +192,7 @@ p{
 
 .navbar-brand{
 	padding:3.0rem 0 0;
+	padding-left:calc(1.5rem + 15.5px);
 	margin:0 auto;	
 }
 .logo span,
