@@ -31,7 +31,10 @@
  		<section class="disponibilidadArea">
  			<div class="container-fluid">
  				<article>
- 					Area de disponibilidad
+ 					<?php
+ 						include('data-departamentos.php');
+ 						include('template/template-disponibilidad.php');
+ 					?>
  				</article>
  			</div>
  		</section>

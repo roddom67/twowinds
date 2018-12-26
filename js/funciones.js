@@ -153,32 +153,9 @@ $(function(){
 	
 	showVideos.init();
 	
-	disponibilidad = {
-		init: function(){
-			var pisos = $('.pisos a');
-			var plantas = $('.plantas');
-			$(pisos).on('click',function(e){
-				e.preventDefault();
-				$(pisos).removeClass('activo');
-				$(this).addClass('activo');
-				var planta = $(this).attr('href');
-				//alert(planta);
-				$(plantas)
-					.find('.accordion')
-						.addClass('hidden')
-					.parent()
-					.find(planta)
-						.removeClass('hidden');
-			
-				
-			})
-		}
-	}
-	if($('body').hasClass('disponibilidad')){
-		disponibilidad.init();
-	}
 	acordion = {
 		init: function(){
+			
 			if($('section').find('.accordion')){
 				$('.accordion').accordion({
 					active: false,
@@ -188,11 +165,8 @@ $(function(){
 			}
 		}
 	}
-	if($('body').hasClass('el-barrio')){
-		if($(window).width() < 767 ){
-			acordion.init();
-		}
-	}else{
+	if($('body').hasClass('disponibilidad')){
+		
 		acordion.init();
 	}
 	
