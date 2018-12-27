@@ -447,45 +447,9 @@ padding-bottom: 0;
 	padding:0 25%;
 }
 
-/* Background White */
-.plantaArea h4,
-.textArea h2,
-.textArea h3,
-.textImageArea article a,
-.index .textImageArea.imageBgRight h2,
-.textMapArea h2,
-.text2_3ImageArea p span,
-.threeImagesArea .playVideo:before,
-.navGris .header h1,
-.linksArea a,
-.disponibilidadArea h2 strong{
-	color: var(--main-color)
-}
-
-/* Disponibilidad Pisos */
-.pisos{
-	width:189px;
-	height: 183px;
-	background: url(../images/planos/frente.png) no-repeat top center;
-	padding:0px 18px 0;
-}
-.pisos li{
-	position: relative;
-	display: block;
-}
-
-.pisos a.piso0{height: 29px;}
-.pisos a.piso1{height: 21px;}
-.pisos a.piso2{height: 22px;}
-.pisos a.piso3{height: 22px;}
-.pisos a.piso4{height: 22px;}
-.pisos a.piso5{height: 22px;}
-.pisos a.piso6{height: 22px;}
-.pisos a.piso7{height: 23px;}
-
-
-.index .textImageArea.bgGray:before{
-	background-color: var(--white);
+/* Departamentos */
+.departamentos h3{
+	color: var(--dark-gray);
 }
 
 @media (max-width: 575px) {

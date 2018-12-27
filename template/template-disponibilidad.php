@@ -28,55 +28,44 @@ if(isset($departamentos)){
 		</ul>
 	</div>
 	<div class="departamentos accordion">
+	<?php
+		for( $d = 0; $d < sizeof($departamentos);$d++){
+			for($z=0; $z < sizeof($departamentos[$d]['deptos']); $z++){
+	?>
 		<h3>
-			<span>
-				3A
-			</span>
-			<span>
-				4
-			</span>
-			<span>
-				96
-			</span>
-			<span>
-				118
-			</span>
-			<span class="ver">
-				ver
-			</span>
-			<a href="">descargar planta</a>
-			<a href="">enviar</a>
+			<strong>
+				<?php $departamentos[$d]['piso'] + $departamentos[$d]['deptos'][$z]['unidad'] ?>
+			</strong>
+			<strong>
+				<?php $departamentos[$d]['deptos'][$z]['rooms'] ?>
+			</strong>
+			<strong>
+				<?php $departamentos[$d]['deptos'][$z]['bathrooms'] ?>
+			</strong>
+			<strong>
+				<?php $departamentos[$d]['deptos'][$z]['meters2'] ?>
+			</strong>
+			<strong>
+				<?php $departamentos[$d]['deptos'][$z]['totalMeters2'] ?>
+			</strong>
 		</h3>
 		<div>
+			<ul>
+				<li>
+					<a href="">descargar planta</a>
+				</li>
+				<li>
+					<a href="">enviar</a>
+				</li>
+			</ul>
 			<span class="spanImg">
 				<img src="images/planos/plano.png" >
 			</span>
 		</div>
-		
-		<h3>
-			<span>
-				3A
-			</span>
-			<span>
-				4
-			</span>
-			<span>
-				96
-			</span>
-			<span>
-				118
-			</span>
-			<span class="ver">
-				ver
-			</span>
-			<a href="">descargar planta</a>
-			<a href="">enviar</a>
-		</h3>
-		<div>
-			<span class="spanImg">
-				<img src="images/planos/plano.png" >
-			</span>
-		</div>
+	<?php
+			}
+		}
+	?>
 		
 	</div>
 </div>
