@@ -31,7 +31,7 @@
 		<section class="textGray">
  			<div class="container-fluid">
   				<article class="textoDestacado">
-  					<p><strong>El desarrollo y la transformación que buscabas están más cerca tuyo de lo que creías, pronto vas a poder disfrutar eso que tanto amás de Villa Urquiza en una experiencia barrial mejorada, enriquecida por el confort y los atributos de un complejo residencial moderno, seguro, funcional y excelentemente ubicado.</strong></p>
+  					<p><strong>El desarrollo y la transformación que buscabas están <br>más cerca tuyo de lo que creías, pronto vas a poder <br>disfrutar eso que tanto amás de Villa Urquiza en una <br>experiencia barrial mejorada, enriquecida por el confort <br>y los atributos de un complejo residencial moderno, <br>seguro, funcional y excelentemente ubicado.</strong></p>
   					<h4><a href="" title="El proyecto" class="link">El proyecto</a></h4>
   					<h5><a href="" title="Ver video" class="video videoLink">Ver video<i class="fas fa-play-circle"></i></a></h5>
   				</article>
@@ -76,7 +76,7 @@
  						<img src="images/amenities/amenities.jpg" alt"Amenities" title="Amenities">
  					</span>
  					<div class="boxOverImage">
- 						<h2>Preparate para experimentar la comodidad en su estado más completo</h2>
+ 						<h2>Preparate para <br>experimentar la comodidad <br>en su estado más completo</h2>
  						<a href="" title="Unidades" class="link">Unidades</a>
  					</div>
  				</article>

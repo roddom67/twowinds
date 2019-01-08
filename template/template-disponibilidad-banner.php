@@ -6,7 +6,7 @@
 					<img src="images/disponibilidad/disponibilidad.jpg" alt="Disponiblidad" title="Disponibilidad">
 				</span>
 				<div>
-					<h3>Encontrá un departamento a tu medida</h3>
+					<h3>Encontrá un departamento a <br>tu medida</h3>
 					<span><a href="" title="Disponibilidad" class="link">Disponibilidad</a></span>				
 				</div>
 			</div>

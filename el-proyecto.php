@@ -40,9 +40,11 @@
   							<ul>
   								<li>
   									<small>90 unidades<br>funcionales<br>conformadas por</small>
+  									<p>24 monoambientes.<br>38 deptos de 2 Ambientes.<br>25 deptos de 3 Ambientes.<br>4 dúplex.</p>
   								</li>
   								<li>
-  									<p>24 monoambientes.<br>38 deptos de 2 Ambientes.<br>25 deptos de 3 Ambientes.<br>4 dúplex.</p>
+  									<small>Subsuelo 1 y 2</small>
+  									<p>95 Cocheras</p>
   								</li>
   							</ul>
   						</li>
@@ -58,10 +60,8 @@
   									<p>Terraza con<br>Parrilla y Piletas</p>
   								</li>
   								<li>
-  									<small>Piso 1</small>
+  									<small>Entrepiso</small>
   									<p>Sum y Gym</p>
-  									<small>Subsuelo 1 y 2</small>
-  									<p>95 Cocheras</p>
   								</li>
   							</ul>
   						</li>

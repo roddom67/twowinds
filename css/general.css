@@ -18,7 +18,7 @@ UL, OL, LI {list-style: none; margin:0;padding:0;}
 a,
 a:hover,
 a:focus,
-a:visited {text-decoration: none; cursor:pointer;outline:0;}
+a:visited {text-decoration: none; cursor:pointer;outline:0; font-family: 'Work Sans', sans-serif;}
 .CleanFloats{clear: both; float: none; height: 0px;}
 .Clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
 *+html .Clearfix {min-height: 1%;} /*IE7*/
@@ -74,6 +74,7 @@ h2{
 	font-weight: bold;
 	text-align: center;
 	line-height: 5.3rem;
+	margin:0;
 }
 p{
 	font-family: 'Spectral', serif;
@@ -401,13 +402,14 @@ footer a{
 	font-size:1.6rem;
 }
 footer .addressFooter li ul li{
-	padding-bottom:15px;
+	line-height:1.75em;
+	font-size: 1.6rem;
 }
 footer a:hover{
 	color: white;
 }
 footer p{
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	line-height:1.75em;
 	font-weight:300;
 	font-family: 'Work Sans', sans-serif;
@@ -425,33 +427,18 @@ footer a.link:hover{
 footer a.link:hover:after{
 	border-color:white;
 }
-footer .legalesArea{
-	display: flex;
-	margin: 0 -5px;
+footer .menuArea a{
+	font-weight:300;
 }
-footer .legalesArea li{
-	padding:0 5px;
-	border-left: 1px solid  var(--dark-gray);
+footer .contactoArea a{
+	text-transform:uppercase;
+	font-size:1.4rem;
 }
-footer .legalesArea li:first-child{
-	border: none;
-}
-footer .legalesArea li a{
-	color: var(--dark-gray);
-	font-size:11px;
-	display: block;
-}
-footer .legalesArea li a:hover{
-	text-decoration: underline;
-}
-footer .legalesArea li small{
-	font-size: 1.1rem;
-}
-
 
 /* Internals Home page */
 .header h1{
 	padding:9.0rem 0 1.5rem;
+	color:var(--chatelle);
 }
 /*.header h2{
 	padding:0 0 1.5rem;
@@ -550,7 +537,7 @@ section .video i{
 
 .textoDestacado p{
 	font-size:4.1em;
-	line-height: 1.25em;
+	line-height: 1.39em;
 	padding: 0 2em;
 }
 .textoDestacado p strong{
@@ -595,7 +582,7 @@ section .video i{
 	top:50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	padding: 60px;
+	padding: 60px 30px;
 	background: var(--chatelle);
 	text-align: center;
 }
@@ -604,6 +591,7 @@ section .video i{
 	line-height: 50px;
 	color:white;
 	font-weight:normal;
+	padding-bottom:50px;
 }
 .boxOverImage .link{
 	color: var(--paua);
@@ -666,24 +654,30 @@ section .video i{
 }
 .galeriaArea article > ul {
 	display:flex;
-	flex-wrap:nowrap
+	flex-wrap:nowrap;
+	align-items:center;
 }
 .galeriaArea article > ul > li.sliderLeft,
 .galeriaArea article > ul > li.sliderRight{
 	min-width:33.3333%;
 }
-.galeriaArea article > ul > li.sliderLeft{
-	padding-right: 10rem;
-}
+.galeriaArea article > ul > li.sliderLeft,
 .galeriaArea article > ul > li.sliderRight{
-	padding-left: 10rem;
+	padding: 0 5%;
 }
 .galeriaArea article > ul > li.slider{
 	min-width:66.6666%;
 }
+.galeriaArea article > ul > li.sliderLeft a,
+.galeriaArea article > ul > li.sliderRight a{
+	color: var(--paua);
+}
 
 .descargarBrochure{
 	padding: 6.0rem 0;
+}
+.index .descargarBrochure{
+padding-top: 0;
 }
 .descargarBrochure article{
 	text-align: center;

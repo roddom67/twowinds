@@ -22,7 +22,7 @@
   				<article class="textoDestacado">
   					<h1>El Barrio</h1>
   					<h2 class="txtBold">El corazón de Villa Urquiza</h2>
-  					<p>Two Winds Urquiza, por supuesto, está ubicado en el palpitante centro de Villa Urquiza, un lugar especial en donde se conjuga lo más tradicional de la zona con elementos y facilidades de tinte más moderno y cosmopolita. </p>
+  					<p>Two Winds Urquiza, por supuesto, está ubicado <br>en el palpitante centro de Villa Urquiza, un lugar <br>especial en donde se conjuga lo más tradicional <br>de la zona con elementos y facilidades de tinte <br>más moderno y cosmopolita. </p>
   				</article>
  			</div>
  		</section>

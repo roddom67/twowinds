@@ -31,8 +31,19 @@
 #navbarSupportedContent{
 	background: var(--white);
 }
+#navbarSupportedContent{
+	overflow:auto;
+}
+#navbarSupportedContent .navbar-nav li{
+	font-size: 4.0rem;
+	line-height: 65px;
+}
 #navbarSupportedContent .navbar-nav li a{
-	color: var(--black);
+	color: var(--paua);
+	font-family: 'Spectral', serif;
+	padding:0;
+	font-size: 4.0rem;
+	line-height: 65px;
 }
 
 .textArea h1{
@@ -70,6 +81,7 @@
 .index .mainBox p{
 	padding-top:1.5rem;
 	position: relative;
+	font-size:25px;
 }
 .index .mainBox p:before{
 	content: '';
@@ -85,7 +97,7 @@
 	padding:50px 0 30px;
 }
 .index .galeriaArea{
-	padding:6.0em 0;
+	padding:10.0em 0;
 	position: relative;
 }
 .index .textGray{
@@ -160,6 +172,7 @@ padding-bottom: 0;
 }
 
 /* El Barrio */
+
 .el-barrio .header{
 	padding-bottom: 14.0em;
 }
@@ -174,11 +187,11 @@ padding-bottom: 0;
 		"image6 image7 image8 image8"
 		"texto1 texto1 image9 image9"
 		"image10 image11 image12 image12";
-	grid-column-gap: 15px;
-	grid-row-gap: 15px;
+	margin:-10px;
 }
 .galeria-el-barrio ul li{
 	overflow: hidden;
+	padding: 10px;
 }
 .galeria-el-barrio .image1{
 	grid-column-start: 1;
@@ -267,9 +280,9 @@ padding-bottom: 0;
 	grid-column-end: 3;
 	grid-row-start: 4;
 	grid-row-end: 5;
-	padding: 70px;
+	padding: 0 8.33333%;
 	text-align:left;
-
+	align-self:center;
 }
 
 .galeria-el-barrio h3{
@@ -277,6 +290,11 @@ padding-bottom: 0;
 	font-size: 14px;
 	color: white;
 	padding-bottom:60px;
+	text-transform:uppercase;
+}
+.galeria-el-barrio .texto1 p{
+	font-size: 21px;
+	line-height: 35px;
 }
 .galeria-el-barrio p + p{
 	padding-top:45px;
@@ -294,18 +312,21 @@ padding-bottom: 0;
 
 }
 .edificioArea > ul > li{
-	width:44%;
+	width:40%;
 }
 .edificioArea > ul > li.col2{
-	width: 12%;
+	width: 20%;
 }
 .edificioArea .col1 li{
 	text-align:right;
-	padding: 20px;
+	padding: 0 20px;
 }
 .edificioArea .col3 li{
 	text-align:left;
-	padding: 20px;
+	padding: 0 20px;
+}
+.edificioArea .col3 li + li p{
+	padding-bottom:30px;
 }
 .edificioArea small{
 	color: var(--paua);
@@ -313,9 +334,9 @@ padding-bottom: 0;
 	font-weight:bold;
 	font-family: 'Work Sans', sans;
 	line-height: 23px;
-	padding-top:60px;
 	display:block;
 }
+
 .edificioArea p + small{
 	padding:0;
 }
@@ -324,12 +345,16 @@ padding-bottom: 0;
 	font-size: 24px;
 	line-height:36px;
 }
+.edificioArea .col1 ul,
 .edificioArea .col3 ul{
 	display:flex;
 	flex-wrap:nowrap;
 	flex-direction:column;
 	justify-content:space-between;
 	height: 100%;
+}
+.edificioArea .col1  li + li small{
+	padding-top:60px;
 }
 .el-proyecto .galeriaArea{
 	padding-bottom:0;
