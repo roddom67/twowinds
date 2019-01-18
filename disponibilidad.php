@@ -22,7 +22,7 @@
   				<article class="">
   					<h1>Disponibilidad</h1>
   					<h2 class="txtBold">El confort deseado</h2>
-  					<p>TwoWinds Urquiza ofrece toda clase de comodidades pensadas especialmente para hacer más sencillas las experiencias del mundo moderno.</p>
+  					<p>TwoWinds Urquiza ofrece toda clase de <br>comodidades pensadas especialmente para <br>hacer más sencillas las experiencias del <br>mundo moderno.</p>
   				</article>
  			</div>
  		</section>

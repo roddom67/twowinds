@@ -22,7 +22,7 @@
   				<article class="">
   					<h1>Unidades</h1>
   					<h2 class="txtBold">Espacios a tu medida</h2>
-  					<p>La arquitectura moderna y versátil de Two Winds le brinda la flexibilidad para adaptarse a diferentes necesidades de espacio. El edificio propone amplias y luminosas unidades de uno, dos, tres ambientes y dúplex.</p>
+  					<p>La arquitectura moderna y versátil de Two Winds <br>le brinda la flexibilidad para adaptarse a <br>diferentes necesidades de espacio. El edificio <br>propone amplias y luminosas unidades de uno, <br>dos, tres ambientes y dúplex.</p>
   				</article>
  			</div>
  		</section>
@@ -60,7 +60,7 @@
  							<h3>Tu espacio personal</h3>
  						</li>
  						<li>
- 							<p>Moderno y versátil el interior de Two Winds fue especialmente ideado y construido para coincidir con una amplia gama de necesidades de espacio. </p>
+ 							<p>Moderno y versátil <br>el interior de Two Winds <br>fue especialmente ideado <br>y construido para coincidir <br>con una amplia gama de <br>necesidades de espacio. </p>
  						</li>
  						<li>
  							<h4>90 unidades funcionales,<br>conformadas por:</h4>
@@ -80,7 +80,7 @@
  			<div class="container-fluid">
  				<article>
  					<h2>Detalles</h2>
- 					<p>La diferencia está en los detalles. En TwoWinds las terminaciones son de la más alta calidad</p>
+ 					<p>La diferencia está en los detalles. En <br>TwoWinds las terminaciones son de la <br>más alta calidad</p>
  				</article>
  			</div>
  		</section>

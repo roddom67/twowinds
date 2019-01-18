@@ -166,6 +166,13 @@ padding-bottom: 0;
 	background:var(--main-color);
 }
 
+.el-proyecto .navSectionArea{
+	padding-bottom: 4.0rem;
+}
+.el-proyecto .galeriaArea.backPauaTop::after {
+	transform: translate(0,7em);
+}
+
 /* Los Departamentos */
 .los-departamentos .headerImage{
 	background-image: url(../images/imagen_el_departamento.jpg);
@@ -382,16 +389,27 @@ padding-bottom: 0;
 	font-family: 'Work Sans', sans;
 	text-transform:uppercase;
 	padding-bottom:20px;
+	letter-spacing: 0.1em;
 }
 .listAmenities li p{
 	font-size:17px;
 	line-height:21px;
 	color: var(--paua);
 }
+.amenities .textGray{
+	padding-bottom:4em;
+}
+.amenities .galeriaArea.backPauaBottom::after {
+	transform: translate(0,7em);
+}
 
+.serviciosArea{
+	padding-bottom: 8rem;
+}
 .serviciosArea ul{
 	display:flex;
 	flex-wrap:wrap;
+	margin:0 5%;
 }
 .serviciosArea ul li:first-child{
 	width:100%;
@@ -399,24 +417,27 @@ padding-bottom: 0;
 .serviciosArea ul li{
 	width:50%;
 }
+.serviciosArea article > ul > li:last-child{
+	padding-left: 10%;
+}
 .serviciosArea h3{
 	color:white;
 	font-size: 14px;
 	font-family: 'Work Sans', sans;
 	text-transform: uppercase;
 	padding-bottom:40px;
+	letter-spacing: 0.1em;
 }
 .serviciosArea p{
 	font-size:41px;
 	line-height: 51px;
-	padding-right:30%; 
 }
 .serviciosArea ul li ul{
 	flex-direction:column;
 }
 
 .serviciosArea .listadoPunto{
-	
+	margin:0;
 }
 .serviciosArea .listadoPunto li{
 	width:100%;
@@ -425,7 +446,7 @@ padding-bottom: 0;
 	font-size: 1.7em;
 	line-height: 2.4rem;
 	font-weight: 200;
-	padding-bottom:25px;
+	padding-bottom:15px;
 }
 .serviciosArea .listadoPunto li:before{
 	content: '·';
@@ -455,11 +476,26 @@ padding-bottom: 0;
 	font-weight: 700;
 	font-family: 'Work Sans', sans;
 	text-transform: uppercase;
-	padding-bottom:40px;
+	padding-bottom:30px;
+	letter-spacing: 0.1em;
 }
 .detallesArea p{
 	color:white;
-	padding:0 40.0%;
+	padding:0;
+}
+.unidades .detallesArea p{
+	font-size:2.7em;
+	line-height: 33px;
+}
+.unidades .backPauaTop::after {
+	display: none;
+}
+.unidades .disponibilidadBanner{
+	padding-top: 15.0em;
+}
+
+.disponibilidadArea{
+	padding: 12.0rem 0 1.0rem;
 }
 
 .el-equipo .header{
@@ -468,13 +504,21 @@ padding-bottom: 0;
 
 .el-equipo .header p{
 	font-size: 1.7em;
-	line-height:2.4em;
+	line-height:27px;
 	padding:0 25%;
+}
+.el-equipo .header span{
+	padding-top: 50px;
+	display:block;
 }
 
 /* Departamentos */
 .departamentos h3{
 	color: var(--dark-gray);
+}
+
+.unidades .header p{
+	padding-bottom: 0;
 }
 
 @media (max-width: 575px) {

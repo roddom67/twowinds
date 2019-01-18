@@ -21,7 +21,7 @@
 				?>
   				<article class="">
   					<h1>El desarrollador</h1>
-  					<h2 class="txtBold">Desarrollamos proyectos de vida</h2>
+  					<h2 class="txtBold">Desarrollamos <br>proyectos de vida</h2>
   					<p>Nullam venenatis tristique leo, vitae finibus leo aliquam a. Integer egestas quam eget diam dignissim tempus. Vivamus ut porta arcu, aliquam convallis tortor. Praesent rutrum pellentesque lobortis. In vitae ligula sit amet nibh aliquet maximus. Fusce interdum dictum enim, vel vehicula augue ultricies eu. Integer vulputate mauris quis volutpat sollicitudin. Pellentesque aliquet felis ex, ac accumsan libero tristique a. Aliquam scelerisque, urna et rutrum porttitor, lectus neque rutrum est, sed consequat libero augue a ligula.</p>
   					<span><a href="" title="Visitar web" target="_blank" class="link">Visitar web</a></span>
   				</article>
