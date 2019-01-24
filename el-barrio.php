@@ -1,12 +1,6 @@
 <?php
-	
-	$pagina = 'el-barrio';
-	$proyecto = 'twowinds';
-	$activoEB = true;
-	
-	$headTitulo[$pagina]='El Barrio | Two Winds | Urquiza';
-	$headDesc[$pagina]='Two Winds - Urquiza. Mi lugar en el mundo. 54 11 5354.8000';
-	$headKeywords[$pagina] = 'barrancas, barrio, luminosos, ambientees, edificio, moderno, ciudad, departamentos, inmobiliaria, arquitecto, desarrollo, gestión, inmobiliarios, gerenciamiento,edificios, vivienda, oficinas, concursos, construcción, planificación, obras, dirección, urquiza, two winds';
+
+	include('data/data-el-barrio.php');	
 
 	$navGris = true;
 	include("head.php");
@@ -20,9 +14,9 @@
 					include("nav.php")
 				?>
   				<article class="textoDestacado">
-  					<h1>El Barrio</h1>
-  					<h2 class="txtBold">El corazón de Villa Urquiza</h2>
-  					<p>Two Winds Urquiza, por supuesto, está ubicado <br>en el palpitante centro de Villa Urquiza, un lugar <br>especial en donde se conjuga lo más tradicional <br>de la zona con elementos y facilidades de tinte <br>más moderno y cosmopolita. </p>
+  					<h1><?php echo $textoDestacado['titulo'] ?></h1>
+  					<h2 class="txtBold"><?php echo $textoDestacado['subtitulo'] ?></h2>
+  					<p><?php echo $textoDestacado['texto'] ?></p>
   				</article>
  			</div>
  		</section>
@@ -30,73 +24,42 @@
 		<section class="textGray backPaua">
  			<div class="container-fluid">
  				<article class="galeria-el-barrio">
-  					<ul>
-  						<li class="image1">
-  							<span class="spanImg">
-  								<img src="images/barrio/imagen_barrio_1.jpg" alt="1" title="">
-  							</span>
-  						</li>
-  						<li class="image2">
-  							<span class="spanImg">
-  								<img src="images/barrio/imagen_barrio_2.jpg" alt="2" title="">
-  							</span>
-  						</li>
-  						<li class="image3">
-  							<span class="spanImg">
-  								<img src="images/barrio/imagen_barrio_3.jpg" alt="3" title="">
-  							</span>
-  						</li>
-  						<li class="image4">
-  							<span class="spanImg">
-  								<img src="images/barrio/imagen_barrio_4.jpg" alt="4" title="">
-  							</span>
-  						</li>
-  						<li class="image5">
-  							<span class="spanImg">
-  								<img src="images/barrio/imagen_barrio_5.jpg" alt="5" title="">
-  							</span>
-  						</li>
-  						<li class="image6">
-  							<span class="spanImg">
-  								<img src="images/barrio/imagen_barrio_6.jpg" alt="6" title="">
-  							</span>
-  						</li>
-  						<li class="image7">
-  							<span class="spanImg">
-  								<img src="images/barrio/imagen_barrio_7.jpg" alt="7" title="">
-  							</span>
-  						</li>
-  						<li class="image8">
-  							<span class="spanImg">
-  								<img src="images/barrio/imagen_barrio_8.jpg" alt="8" title="">
-  							</span>
-  						</li>
-  						<li class="texto1">
-  							<h3>Villa Urquiza</h3>
-  							<p>Two Winds Urquiza se eleva sobre la Av. Triunvirato, a un paso de las avenidas Congreso, Crisólogo Larralde y Galván. Esta cercanía permite a sus residentes acceder rápidamente a todos los puntos de la Ciudad. La zona también proporciona múltiples medios de transporte público como la Línea B de subterráneos y el Ferrocarril Mitre.</p>
-  							<p>Poblada de espacios verdes y arboladas calles, Villa Urquiza se posiciona como un excelente lugar para gozar de la naturaleza. También, el barrio cuenta con diferentes opciones comerciales, educativas y gastronómicas.</p>
-  						</li>
-  						<li class="image9">
-  							<span class="spanImg">
-  								<img src="images/barrio/imagen_barrio_9.jpg" alt="10" title="">
-  							</span>
-  						</li>
-  						<li class="image10">
-  							<span class="spanImg">
-  								<img src="images/barrio/imagen_barrio_10.jpg" alt="11" title="">
-  							</span>
-  						</li>
-  						<li class="image11">
-  							<span class="spanImg">
-  								<img src="images/barrio/imagen_barrio_11.jpg" alt="12" title="">
-  							</span>
-  						</li>
-  						<li class="image12">
-  							<span class="spanImg">
-  								<img src="images/barrio/imagen_barrio_12.jpg" alt="13" title="">
-  							</span>
-  						</li>
-  					</ul>
+ 					<?php 
+						if(isset($galeria)){
+					?>
+					<ul class="sliderArea">
+						<?php 
+						for( $a = 0; $a < sizeof($galeria)  ; $a++){
+						?>
+						<?php 
+							switch( $galeria[$a]['tipo'] ) {
+								case 'img':
+						?>
+							
+							<li class="image<?php echo $galeria[$a]['data']['ubicacion'] ?>">
+								<span class="spanImg">
+									<img src="<?php echo $galeria[$a]['data']['imagen'] ?>" alt="<?php echo $galeria[$a]['data']['titulo'] ?>" title="<?php echo $galeria[$a]['data']['titulo'] ?>">
+								</span>
+							</li>
+						<?php
+							case 'txt':
+						?>
+  							<li class="texto<?php echo $galeria[$a]['data']['ubicacion'] ?>">
+  								<h3><?php echo $galeria[$a]['data']['titulo'] ?></h3>
+  							<?php 
+  								if(isset($galeria[$a]['data']['texto'])){
+  									for($b=0;$b< sizeof($galeria[$a]['data']['texto']); $b++){
+  							?>
+  								<p><?php echo $galeria[$a]['data']['texto'][$b]; ?></p>
+  									
+  							<?php
+  									}
+  								}
+  							?>
+						<?php }
+						} ?>
+					</ul>
+					<?php } ?>
   				</article>
   			</div>
  		</section>

@@ -45,7 +45,7 @@
   				</li>
   				<li class="col-6 col-sm-6 contactoArea">
   					<h4>Interesado en <br>TwoWinds Urquiza?</h4>
-  					<a href="" title="Contacto" class="link">Contacto</a>
+  					<a href="contacto.php" title="Contacto" class="link">Contacto</a>
   				</li>
   			</ul>
 		</div>

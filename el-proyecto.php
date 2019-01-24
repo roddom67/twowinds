@@ -1,13 +1,7 @@
 <?php
 
-	$pagina = 'el-proyecto';
-	$proyecto = 'twowinds';
-	$activoEP = true;
-
-	$headTitulo[$pagina]='El Proyecto | Two Winds | Urquiza';
-	$headDesc[$pagina]='Two Winds - Urquiza. Mi lugar en el mundo. 54 11 5354.8000';
-	$headKeywords[$pagina] = 'barrancas, barrio, luminosos, ambientees, edificio, moderno, ciudad, departamentos, inmobiliaria, arquitecto, desarrollo, gestión, inmobiliarios, gerenciamiento,edificios, vivienda, oficinas, concursos, construcción, planificación, obras, dirección, urquiza, two winds';
-
+	include('data/data-el-PROYECTO.php');	
+	
 	//$navGris = true;
 	include("head.php");
 	
@@ -21,10 +15,10 @@
 				?>
   				<article class="mainBox">
   					<div>
-   					<h1 class="hidden">El Proyecto</h1>
-   					<h2 class="txtBold">Two Winds te eleva</h2>
-  						<a href="" title="Ver video" class="video videoLink">Ver video<i class="fas fa-play-circle"></i></a>
-  						<p>Sus 8.336 m2 de confort y estética se encuentran repartidos a lo alto en una moderna estructura de 13 pisos. </p>
+  						<h1 class="hidden"><?php echo $textoDestacado['titulo'] ?></h1>
+  						<h2 class="txtBold"><?php echo $textoDestacado['subtitulo'] ?></h2>
+  						<a href="<?php echo $textoDestacado['video']['href'] ?>" title="<?php echo $textoDestacado['video']['titulo'] ?>" class="video videoLink"><?php echo $textoDestacado['video']['titulo'] ?><i class="fas fa-play-circle"></i></a>
+ 						<p><?php echo $textoDestacado['texto'] ?></p>
  					</div>
   				</article>
  			</div>
@@ -37,16 +31,25 @@
   				<article class="edificioArea">
   					<ul>
   						<li class="col1">
+  						<?php
+  							if(isset($edificio['col1'])){
+  							
+  						?>
   							<ul>
+  							<?php 
+  								for($a =0;$a < sizeof($edificio['col1']); $a++){
+  							?>
   								<li>
-  									<small>90 unidades<br>funcionales<br>conformadas por</small>
-  									<p>24 monoambientes.<br>38 deptos de 2 Ambientes.<br>25 deptos de 3 Ambientes.<br>4 dúplex.</p>
+  									<small><?php echo $edificio['col1'][$a]['small'] ?></small>
+  									<p><?php echo $edificio['col1'][$a]['p'] ?></p>
   								</li>
-  								<li>
-  									<small>Subsuelo 1 y 2</small>
-  									<p>95 Cocheras</p>
-  								</li>
+  							<?php
+  								}
+  							?>
   							</ul>
+  						<?php
+  							}
+  						?>
   						</li>
   						<li class="col2">
   							<span class="spanImg">
@@ -54,19 +57,28 @@
   							</span>
   						</li>
   						<li class="col3">
+   						<?php
+  							if(isset($edificio['col3'])){
+  							
+  						?>
   							<ul>
+  							<?php 
+  								for($a =0;$a < sizeof($edificio['col3']); $a++){
+  							?>
   								<li>
-  									<small>Piso 17</small>
-  									<p>Terraza con<br>Parrilla y Piletas</p>
+  									<small><?php echo $edificio['col3'][$a]['small'] ?></small>
+  									<p><?php echo $edificio['col3'][$a]['p'] ?></p>
   								</li>
-  								<li>
-  									<small>Entrepiso</small>
-  									<p>Sum y Gym</p>
-  								</li>
+  							<?php
+  								}
+  							?>
   							</ul>
+  						<?php
+  							}
+  						?>
   						</li>
   					</ul>
-  					<h2 class="txtBold">Una experiencia de altura</h2>
+  					<h2 class="txtBold"><?php echo $edificio['titulo']; ?></h2>
   				</article>
   			</div>
  		</section>

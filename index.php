@@ -1,12 +1,6 @@
 <?php
 
-	$pagina = 'index';
-	$proyecto = 'twowinds';
-	$activoH = true;
-	
-	$headTitulo[$pagina]='Two Winds | Urquiza';
-	$headDesc[$pagina]='Two Winds - Urquiza. Mi lugar en el mundo. 54 11 5354.8000';
-	$headKeywords[$pagina] = 'barrancas, barrio, luminosos, ambientees, edificio, moderno, ciudad, departamentos, inmobiliaria, arquitecto, desarrollo, gestión, inmobiliarios, gerenciamiento,edificios, vivienda, oficinas, concursos, construcción, planificación, obras, dirección, urquiza, two winds';
+	include('data/data-index.php');
 	
 	include("head.php");
 ?>
@@ -20,8 +14,8 @@
   				<article class="mainBox">
   					<div>
   						<span class="logo"><img src="images/twowinds-logo.png" alt="Two Winds" title="Two Winds"></span>
-   					<h1>URQUIZA</h1>
-  						<p>Mi lugar en el mundo</p>
+   					<h1><?php echo $mainBox['titulo']; ?></h1>
+  						<p><?php echo $mainBox['subtitulo']; ?></p>
  					</div>
   				</article>
  			</div>
@@ -31,9 +25,9 @@
 		<section class="textGray">
  			<div class="container-fluid">
   				<article class="textoDestacado">
-  					<p><strong>El desarrollo y la transformación que buscabas están <br>más cerca tuyo de lo que creías, pronto vas a poder <br>disfrutar eso que tanto amás de Villa Urquiza en una <br>experiencia barrial mejorada, enriquecida por el confort <br>y los atributos de un complejo residencial moderno, <br>seguro, funcional y excelentemente ubicado.</strong></p>
-  					<h4><a href="" title="El proyecto" class="link">El proyecto</a></h4>
-  					<h5><a href="" title="Ver video" class="video videoLink">Ver video<i class="fas fa-play-circle"></i></a></h5>
+  					<p><strong><?php echo $textoDestacado['texto'] ?></strong></p>
+  					<h4><a href="<?php echo $textoDestacado['h4']['href'] ?>" title="<?php echo $textoDestacado['h4']['titulo'] ?>" class="link"><?php echo $textoDestacado['h4']['titulo'] ?></a></h4>
+  					<h5><a href="<?php echo $textoDestacado['verVideo']['href'] ?>" title="<?php echo $textoDestacado['verVideo']['titulo'] ?>" class="video videoLink"><?php echo $textoDestacado['verVideo']['titulo'] ?><i class="fas fa-play-circle"></i></a></h5>
   				</article>
   			</div>
  		</section>
@@ -43,26 +37,25 @@
  				<article>
  					<ul>
  						<li class="sliderLeft">
- 							<h2>Mi lugar en el mundo</h2>
- 							<p>Este no es sólo un desarrollo inmobiliario, es un proyecto ideado especialmente para realzar el valor de las cosas que más apreciás: tu ciudad, pero más que nada tu barrio, tu edificio, pero más bien tu espacio, tu departamento, pero principalmente ese sitio al que llamás Mi Lugar en el Mundo.</p>
- 							<a href="" title="Unidades" class="link">Unidades</a>
+ 							<h2><?php echo $sliderLeft['titulo'] ?></h2>
+ 							<p><?php echo $sliderLeft['texto'] ?></p>
+ 							<a href="<?php echo $sliderLeft['link']['href'] ?>" title="<?php echo $sliderLeft['link']['titulo'] ?>" class="link"><?php echo $sliderLeft['link']['titulo'] ?></a>
  						</li>
  			
  						<li class="slider">
+ 							<?php 
+								if(isset($sliderLeft['slider'])){
+							?>
  							<ul class="sliderArea">
+ 								<?php 
+ 									for( $a = 0; $a < sizeof($sliderLeft['slider'])  ; $a++){
+ 								?>
  								<li>
- 									<img src="images/unidades/galeria1.jpg" alt="Unidades" title="Unidades">
+ 									<img src="<?php echo $sliderLeft['slider'][$a]['imagen'] ?>" alt="<?php echo $sliderLeft['slider'][$a]['titulo'] ?>" title="<?php echo $sliderLeft['slider'][$a]['titulo'] ?>">
  								</li>
- 								<li>
- 									<img src="images/unidades/galeria2.jpg" alt="Unidades" title="Unidades">
- 								</li>
- 								<li>
- 									<img src="images/unidades/galeria1.jpg" alt="Unidades" title="Unidades">
- 								</li>
- 								<li>
- 									<img src="images/unidades/galeria2.jpg" alt="Unidades" title="Unidades">
- 								</li>
+ 								<?php } ?>
  							</ul>
+ 							<?php } ?>
  						</li>
  					</ul>
  				</article>
@@ -73,11 +66,11 @@
  			<div class="">
  				<article>
  					<span class="spanImg">
- 						<img src="images/amenities/amenities.jpg" alt"Amenities" title="Amenities">
+ 						<img src="<?php echo $amenities['imagen'] ?>" alt"<?php echo $amenities['tituloImg'] ?>" title="<?php echo $amenities['tituloImg'] ?>">
  					</span>
  					<div class="boxOverImage">
- 						<h2>Preparate para <br>experimentar la comodidad <br>en su estado más completo</h2>
- 						<a href="" title="Unidades" class="link">Unidades</a>
+ 						<h2><?php echo $amenities['h2'] ?></h2>
+ 						<a href="<?php echo $amenities['link']['href'] ?>" title="<?php echo $amenities['link']['titulo'] ?>" class="link"><?php echo $amenities['link']['titulo'] ?></a>
  					</div>
  				</article>
  			</div>
@@ -88,26 +81,26 @@
  				<article>
  					<ul>
  						<li class="slider">
+ 							<?php 
+								if(isset($sliderRight['slider'])){
+							?>
  							<ul class="sliderArea">
+ 								<?php 
+ 									for( $a = 0; $a < sizeof($sliderRight['slider'])  ; $a++){
+ 								?>
  								<li>
- 									<img src="images/unidades/galeria1.jpg" alt="Unidades">
+ 									<img src="<?php echo $sliderRight['slider'][$a]['imagen'] ?>" alt="<?php echo $sliderRight['slider'][$a]['titulo'] ?>" title="<?php echo $sliderRight['slider'][$a]['titulo'] ?>">
  								</li>
- 								<li>
- 									<img src="images/unidades/galeria2.jpg" alt="Unidades">
- 								</li>
- 								<li>
- 									<img src="images/unidades/galeria1.jpg" alt="Unidades">
- 								</li>
- 								<li>
- 									<img src="images/unidades/galeria2.jpg" alt="Unidades">
- 								</li>
+ 								<?php } ?>
  							</ul>
+ 							<?php } ?>
+
  						</li>
  						
  						<li class="sliderRight">
- 							<h2>Un barrio único</h2>
- 							<p>Villa Urquiza en una experiencia barrial insuperable. Su atmósfera cálida y relajada se enriquece con múltiples espacios verdes, una variada oferta gastronómica, educativa y comercial, y accesos rápidos a todos los medios de transporte. </p>
- 							<a href="" title="El barrio" class="link">El barrio</a>
+ 							<h2><?php echo $sliderRight['titulo'] ?></h2>
+ 							<p><?php echo $sliderRight['texto'] ?></p>
+ 							<a href="<?php echo $sliderRight['link']['href'] ?>" title="<?php echo $sliderRight['link']['titulo'] ?>" class="link"><?php echo $sliderRight['link']['titulo'] ?></a>
  						</li>
  					</ul>
  				</article>
