@@ -1,12 +1,6 @@
 <?php
 	
-	$pagina = 'amenities';
-	$proyecto = 'twowinds';
-	$activoEB = true;
-	
-	$headTitulo[$pagina]='Amenities | Two Winds | Urquiza';
-	$headDesc[$pagina]='Two Winds - Urquiza. Mi lugar en el mundo. 54 11 5354.8000';
-	$headKeywords[$pagina] = 'barrancas, barrio, luminosos, ambientees, edificio, moderno, ciudad, departamentos, inmobiliaria, arquitecto, desarrollo, gestión, inmobiliarios, gerenciamiento,edificios, vivienda, oficinas, concursos, construcción, planificación, obras, dirección, urquiza, two winds';
+	include('data/data-amenities.php');	
 
 	$navGris = true;
 	include("head.php");
@@ -20,9 +14,9 @@
 					include("nav.php")
 				?>
   				<article class="">
-  					<h1>Amenities</h1>
-  					<h2 class="txtBold">El confort deseado</h2>
-  					<p>TwoWinds Urquiza ofrece toda clase de <br>comodidades pensadas especialmente <br>para hacer más sencillas las experiencias <br>del mundo moderno.</p>
+  					<h1><?php echo $textoDestacado['titulo'] ?></h1>
+  					<h2 class="txtBold"><?php echo $textoDestacado['subtitulo'] ?></h2>
+  					<p><?php echo $textoDestacado['texto'] ?></p>
   				</article>
  			</div>
  		</section>
@@ -30,50 +24,28 @@
  		<section class="textGray">
  			<div class="container-fluid">
  				<article>
- 					<ul class="listAmenities">
- 						<li>
- 							<span class="spanImg">
- 								<img src="images/amenities/piscina.png" alt="Pileta" title="Pileta">
- 							</span>
- 							<h3>Piscina</h3>
- 							<p>Para disfrutar del aire libre en los días de  <br>calor, el edificio cuenta con una piscina <br>descubierta en la última planta.</p>
- 						</li>
- 						<li>
- 							<span class="spanImg">
- 								<img src="images/amenities/parrilla.png" alt="Parrilla" title="Parrilla">
- 							</span>
- 							<h3>Parrilla</h3>
- 							<p>En la terraza del edificio <br>se pueden encontrar parrillas <br>listas para usar a disposición <br>de todos los residentes.</p>
- 						</li>
- 						<li>
- 							<span class="spanImg">
- 								<img src="images/amenities/gym.png" alt="Gym" title="Gym">
- 							</span>
- 							<h3>Gym</h3>
- 							<p>Totalmente equipado, <br>el gimnasio de Two Winds Urquiza es un <br>espacio ideal para mantenerse en forma. </p>
- 						</li>
- 						<li>
- 							<span class="spanImg">
- 								<img src="images/amenities/sum.png" alt="Sum" title="Sum">
- 							</span>
- 							<h3>Sum</h3>
- 							<p>El edificio cuenta con un salón de usos <br>múltiples que puede ser reservado para <br>distintos eventos.</p>
- 						</li>
- 						<li>
- 							<span class="spanImg">
- 								<img src="images/amenities/sum.png" alt="Laundry" title="Laundry">
- 							</span>
- 							<h3>Laundry</h3>
- 							<p>Disponible las 24 horas, <br>el Laundry de Two Winds Urquiza tiene <br>todo lo necesario para brindar un servicio <br>de gran valor. </p>
- 						</li>
- 						<li>
- 							<span class="spanImg">
- 								<img src="images/amenities/cocheras.png" alt="Cocheras" title="Cocheras">
- 							</span>
- 							<h3>Cocheras</h3>
- 							<p>Two Winds Urquiza tiene <br>105 espacios dedicados de estacionamiento <br>ubicados en la planta baja y los tres <br>subsuelos del edificio. </p>
- 						</li>
- 					</ul>
+ 					<?php
+						if(isset($listaAmenities)){
+					?>
+					<ul class="listAmenities">
+					<?php
+							for($a=0;$a<sizeof($listaAmenities);$a++){
+					?>
+						<li>
+							<span class="spanImg">
+								<img src="<?php echo $listaAmenities[$a]['imagen'] ?>" alt="<?php echo $listaAmenities[$a]['titulo'] ?>" title="<?php echo $listaAmenities[$a]['titulo'] ?>">
+							</span>
+							<h3><?php echo $listaAmenities[$a]['titulo'] ?></h3>
+							<p><?php echo $listaAmenities[$a]['texto'] ?></p>
+						</li>
+						
+ 					<?php
+							}
+					?>
+					</ul>
+					<?php
+						}
+					?>
  				</article>
  			</div>
  		</section>
@@ -83,20 +55,23 @@
  				<article>
  					<ul>
  						<li class="slider">
- 							<ul class="sliderArea">
+ 							<?php
+								if(isset($galeria1)){
+							?>
+							<ul class="sliderArea">
+							<?php
+									for($a=0;$a<sizeof($galeria1);$a++){
+							?>
  								<li>
- 									<img src="images/unidades/galeria1.jpg" alt="Unidades" title="Unidades">
+ 									<img src="<?php echo $galeria1[$a]['imagen'] ?>" alt="<?php echo $galeria1[$a]['titulo'] ?>" title="<?php echo $galeria1[$a]['titulo'] ?>">
  								</li>
- 								<li>
- 									<img src="images/unidades/galeria2.jpg" alt="Unidades" title="Unidades">
- 								</li>
- 								<li>
- 									<img src="images/unidades/galeria1.jpg" alt="Unidades" title="Unidades">
- 								</li>
- 								<li>
- 									<img src="images/unidades/galeria2.jpg" alt="Unidades" title="Unidades">
- 								</li>
- 							</ul>
+							<?php
+									}
+							?>
+							</ul>
+							<?php
+								}
+							?>
  						</li>
  					</ul>
  				</article>
@@ -107,22 +82,27 @@
  				<article>
  					<ul>
  						<li>
- 							<h3>Servicios</h3>
+ 							<h3><?php echo $serviciosArea['titulo'] ?></h3>
  						</li>
  						<li>
- 							<p>Preparate<br>para experimentar<br>la comodidad en su<br>estado más completo. </p>
+ 							<p><?php echo $serviciosArea['parrafo'] ?></p>
  						</li>
  						<li>
- 							<ul class="listadoPunto"> 
- 								<li>Vigilancia 24hs</li>
- 								<li>Alarma</li>
- 								<li>Cochera cubierta</li>
- 								<li>Pet friendly</li>
- 								<li>Solarium</li>
- 								<li>Hall principal doble altura</li>
- 								<li>Instalacion de servicios subterranea</li>
- 								<li>Dos ascensores de alta velocidad</li> 							
- 							</ul>
+ 							<?php
+								if(isset($serviciosArea['listado'])){
+							?>
+							<ul class="listadoPunto">
+							<?php
+									for($a=0;$a<sizeof($serviciosArea['listado']);$a++){
+							?>
+ 								<li><?php echo $serviciosArea['listado'][$a] ?></li>
+ 							<?php
+									}
+							?>
+							</ul>
+							<?php
+								}
+							?>
  						</li>
  					</ul>
  				</article>
@@ -134,20 +114,23 @@
  				<article>
  					<ul>
  						<li class="slider">
- 							<ul class="sliderArea">
+ 							<?php
+								if(isset($galeria2)){
+							?>
+							<ul class="sliderArea">
+							<?php
+									for($a=0;$a<sizeof($galeria2);$a++){
+							?>
  								<li>
- 									<img src="images/unidades/galeria1.jpg" alt="Unidades" title="Unidades">
+ 									<img src="<?php echo $galeria2[$a]['imagen'] ?>" alt="<?php echo $galeria2[$a]['titulo'] ?>" title="<?php echo $galeria2[$a]['titulo'] ?>">
  								</li>
- 								<li>
- 									<img src="images/unidades/galeria2.jpg" alt="Unidades" title="Unidades">
- 								</li>
- 								<li>
- 									<img src="images/unidades/galeria1.jpg" alt="Unidades" title="Unidades">
- 								</li>
- 								<li>
- 									<img src="images/unidades/galeria2.jpg" alt="Unidades" title="Unidades">
- 								</li>
- 							</ul>
+							<?php
+									}
+							?>
+							</ul>
+							<?php
+								}
+							?>
  						</li>
  					</ul>
  				</article>

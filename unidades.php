@@ -1,12 +1,8 @@
 <?php
+
+	include('data/data-unidades.php');		
 	
-	$pagina = 'unidades';
-	$proyecto = 'twowinds';
-	$activoEB = true;
-	
-	$headTitulo[$pagina]='Unidades | Two Winds | Urquiza';
-	$headDesc[$pagina]='Two Winds - Urquiza. Mi lugar en el mundo. 54 11 5354.8000';
-	$headKeywords[$pagina] = 'barrancas, barrio, luminosos, ambientees, edificio, moderno, ciudad, departamentos, inmobiliaria, arquitecto, desarrollo, gestión, inmobiliarios, gerenciamiento,edificios, vivienda, oficinas, concursos, construcción, planificación, obras, dirección, urquiza, two winds';
+
 
 	$navGris = true;
 	include("head.php");
@@ -20,9 +16,9 @@
 					include("nav.php")
 				?>
   				<article class="">
-  					<h1>Unidades</h1>
-  					<h2 class="txtBold">Espacios a tu medida</h2>
-  					<p>La arquitectura moderna y versátil de Two Winds <br>le brinda la flexibilidad para adaptarse a <br>diferentes necesidades de espacio. El edificio <br>propone amplias y luminosas unidades de uno, <br>dos, tres ambientes y dúplex.</p>
+   				<h1><?php echo $textoDestacado['titulo'] ?></h1>
+  					<h2 class="txtBold"><?php echo $textoDestacado['subtitulo'] ?></h2>
+  					<p><?php echo $textoDestacado['texto'] ?></p>
   				</article>
  			</div>
  		</section>
@@ -33,20 +29,23 @@
  				<article>
  					<ul>
  						<li class="slider">
- 							<ul class="sliderArea">
+ 							<?php
+								if(isset($galeria1)){
+							?>
+							<ul class="sliderArea">
+							<?php
+									for($a=0;$a<sizeof($galeria1);$a++){
+							?>
  								<li>
- 									<img src="images/unidades/galeria1.jpg" alt="Unidades" title="Unidades">
+ 									<img src="<?php echo $galeria1[$a]['imagen'] ?>" alt="<?php echo $galeria1[$a]['titulo'] ?>" title="<?php echo $galeria1[$a]['titulo'] ?>">
  								</li>
- 								<li>
- 									<img src="images/unidades/galeria2.jpg" alt="Unidades" title="Unidades">
- 								</li>
- 								<li>
- 									<img src="images/unidades/galeria1.jpg" alt="Unidades" title="Unidades">
- 								</li>
- 								<li>
- 									<img src="images/unidades/galeria2.jpg" alt="Unidades" title="Unidades">
- 								</li>
- 							</ul>
+							<?php
+									}
+							?>
+							</ul>
+							<?php
+								}
+							?>
  						</li>
  					</ul>
  				</article>
@@ -57,19 +56,28 @@
  				<article>
  					<ul>
  						<li>
- 							<h3>Tu espacio personal</h3>
+ 							<h3><?php echo $serviciosArea['titulo'] ?></h3>
  						</li>
  						<li>
- 							<p>Moderno y versátil <br>el interior de Two Winds <br>fue especialmente ideado <br>y construido para coincidir <br>con una amplia gama de <br>necesidades de espacio. </p>
+ 							<p><?php echo $serviciosArea['parrafo'] ?></p>
  						</li>
  						<li>
- 							<h4>90 unidades funcionales,<br>conformadas por:</h4>
- 							<ul class="listadoPunto"> 
- 								<li>24 monoambientes.</li>
- 								<li>38 departamentos de 2 Ambientes.</li>
- 								<li>25 departamentos de 3 Ambientes.</li>
- 								<li>4 dúplex.</li>
- 							</ul>
+ 							<h4><?php echo $serviciosArea['tituloListado'] ?></h4>
+ 							<?php
+								if(isset($serviciosArea['listado'])){
+							?>
+							<ul class="listadoPunto">
+							<?php
+									for($a=0;$a<sizeof($serviciosArea['listado']);$a++){
+							?>
+ 								<li><?php echo $serviciosArea['listado'][$a] ?></li>
+ 							<?php
+									}
+							?>
+							</ul>
+							<?php
+								}
+							?>
  						</li>
  					</ul>
  				</article>
@@ -79,8 +87,8 @@
  		<section class="detallesArea backPaua">
  			<div class="container-fluid">
  				<article>
- 					<h2>Detalles</h2>
- 					<p>La diferencia está en los detalles. En <br>TwoWinds las terminaciones son de la <br>más alta calidad</p>
+ 					<h2><?php echo $detallesArea['titulo'] ?></h2>
+ 					<p><?php echo $detallesArea['parrafo'] ?></p>
  				</article>
  			</div>
  		</section>
@@ -90,20 +98,23 @@
  				<article>
  					<ul>
  						<li class="slider">
- 							<ul class="sliderArea">
+ 							<?php
+								if(isset($galeria2)){
+							?>
+							<ul class="sliderArea">
+							<?php
+									for($a=0;$a<sizeof($galeria2);$a++){
+							?>
  								<li>
- 									<img src="images/unidades/unidades1.png" alt="Unidades" title="Unidades">
+ 									<img src="<?php echo $galeria2[$a]['imagen'] ?>" alt="<?php echo $galeria2[$a]['titulo'] ?>" title="<?php echo $galeria2[$a]['titulo'] ?>">
  								</li>
- 								<li>
- 									<img src="images/unidades/unidades1.png" alt="Unidades" title="Unidades">
- 								</li>
- 								<li>
- 									<img src="images/unidades/unidades1.png" alt="Unidades" title="Unidades">
- 								</li>
- 								<li>
- 									<img src="images/unidades/unidades1.png" alt="Unidades" title="Unidades">
- 								</li>
- 							</ul>
+							<?php
+									}
+							?>
+							</ul>
+							<?php
+								}
+							?>
  						</li>
  					</ul>
  				</article>

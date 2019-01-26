@@ -101,7 +101,7 @@ $(function(){
 		}
 	}
 	
-	navSectionsHeight.init();
+	//navSectionsHeight.init();
 	
 	
 	articleHeight = {

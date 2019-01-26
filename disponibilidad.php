@@ -1,12 +1,6 @@
 <?php
 	
-	$pagina = 'disponibilidad';
-	$proyecto = 'twowinds';
-	$activoEB = true;
-	
-	$headTitulo[$pagina]='Disponibilidad | Two Winds | Urquiza';
-	$headDesc[$pagina]='Two Winds - Urquiza. Mi lugar en el mundo. 54 11 5354.8000';
-	$headKeywords[$pagina] = 'barrancas, barrio, luminosos, ambientees, edificio, moderno, ciudad, departamentos, inmobiliaria, arquitecto, desarrollo, gestión, inmobiliarios, gerenciamiento,edificios, vivienda, oficinas, concursos, construcción, planificación, obras, dirección, urquiza, two winds';
+	include('data/data-disponibilidad.php');	
 
 	$navGris = true;
 	include("head.php");
@@ -20,9 +14,9 @@
 					include("nav.php")
 				?>
   				<article class="">
-  					<h1>Disponibilidad</h1>
-  					<h2 class="txtBold">El confort deseado</h2>
-  					<p>TwoWinds Urquiza ofrece toda clase de <br>comodidades pensadas especialmente para <br>hacer más sencillas las experiencias del <br>mundo moderno.</p>
+   				<h1><?php echo $textoDestacado['titulo'] ?></h1>
+  					<h2 class="txtBold"><?php echo $textoDestacado['subtitulo'] ?></h2>
+  					<p><?php echo $textoDestacado['texto'] ?></p>
   				</article>
  			</div>
  		</section>
@@ -32,7 +26,7 @@
  			<div class="container-fluid">
  				<article>
  					<?php
- 						include('data-departamentos.php');
+ 						include('data/data-departamentos.php');
  						include('template/template-disponibilidad.php');
  					?>
  				</article>

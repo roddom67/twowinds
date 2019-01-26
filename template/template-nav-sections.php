@@ -1,35 +1,32 @@
+<?php
+	include('/data/data-nav-sections.php')
+?>
 		<section class="navSectionArea">
  			<div class="container">
 				<article>
+					<?php
+						if(isset($navSections)){
+					?>
 					<ul>
+					<?php
+							for($a=0;$a<sizeof($navSections);$a++){
+					?>
 						<li>
 							<span class="spanImg">
-								<img src="images/barrio/galeria1.jpg" alt="Barrio" title="Barrio">
+								<img src="<?php echo $navSections[$a]['imagen'] ?>" alt="<?php echo $navSections[$a]['tituloImg'] ?>" title="<?php echo $navSections[$a]['tituloImg'] ?>">
 							</span>
 							<div>
-								<p>Vestibulum maximus arcu vel lectus accumsan,</p>
-								<a href="el-barrio.php" title="Barrio" class="link">Barrio</a>
+								<p><?php echo $navSections[$a]['parrafo'] ?></p>
+								<a href="<?php echo $navSections[$a]['link']['href'] ?>" title="<?php echo $navSections[$a]['link']['title'] ?>" class="link"><?php echo $navSections[$a]['link']['title'] ?></a>
 							</div>
 						</li>
-						<li>
-							<span class="spanImg">
-								<img src="images/unidades/galeria1.jpg" alt="Unidades" title="Unidades">
-							</span>
-							<div>
-								<p>Vestibulum maximus arcu vel lectus accumsan,</p>
-								<a href="unidades.php" title="Unidades" class="link">Unidades</a>
-							</div>
-						</li>
-						<li>
-							<span class="spanImg">
-								<img src="images/amenities/galeria1.jpg" alt="Amenities" title="Amenities">
-							</span>
-							<div>
-								<p>Vestibulum maximus arcu vel lectus accumsan,</p>
-								<a href="amenities.php" title="Amenities" class="link">Amenities</a>
-							</div>
-						</li>
+					<?php
+							}
+					?>
 					</ul>
+					<?php
+						}
+					?>
 				</article>
   			</div>
  		</section>
