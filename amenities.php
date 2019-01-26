@@ -50,7 +50,7 @@
  			</div>
  		</section>
  		
- 		<section class="galeriaArea backPaua backPauaBottom">
+ 		<section class="galeriaArea backPaua backPauaBottom galeria1">
  			<div class="container-fluid">
  				<article>
  					<ul>
@@ -109,7 +109,7 @@
  			</div>
  		</section>
  		
- 		<section class="galeriaArea backPaua backPauaTop">
+ 		<section class="galeriaArea backPaua backPauaTop galeria2">
  			<div class="container-fluid">
  				<article>
  					<ul>

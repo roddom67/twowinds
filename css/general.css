@@ -44,6 +44,7 @@ main{
 	--light-gray: #f2f2f2;
 	--dark-gray: #666;
 	--black: #393839;
+	--black-black: #1f1f1f;
 	
 	--paua:#282757;
 	--paua-90: rgba(54,52,92,.9);
@@ -1161,66 +1162,6 @@ padding-top: 0;
 .ui-accordion-header-icon{
 	display: none !important;
 }
-.disponibilidadArea h2{
-	font-size: 1.8rem;
-	font-weight:500;
-	margin:0;
-	padding: 3.0rem 0;
-	border-top:1px solid var(--dark-gray);
-}
-.disponibilidadArea h2:first-child{
-	border:none;
-}
-.disponibilidadArea .imgArea{
-	padding-bottom: 3.0rem;
-	display:block;
-	
-}
-.disponibilidadArea h2 span{
-	display:block;
-	font-weight:200;
-	padding-bottom: 3.0rem;
-}
-.disponibilidadArea h2 strong{
-	font-size:1.5rem;
-	display:block;
-	font-weight:300;
-	cursor: pointer;
-	color:var(--dark-gray)
-}
-.disponibilidadArea h2 strong:hover{
-	text-decoration: underline;
-}
-.plantas{
-	margin-top:-3.0rem;
-}
-.plantaArea {
-	text-align: center;
-}
-.plantaArea .pisos{
-	margin:0 auto;
-}
-.plantaArea h4{
-	font-size:12px;
-	font-weight: 600;
-	text-transform: uppercase;
-	padding-top:20px;
-}
-.pisos a{
-	text-indent:-1000em; 
-	display: block;
-}
-.pisos a.activo:hover,
-.pisos .activo{
-	background: rgba(0,0,0,.25);
-	cursor:auto;
-	opacity: 1;
-}
-.pisos a:hover{
-	background: var(--main-color);
-	opacity: .25;
-}
-
 
 .linksArea ul{
 	float:right;

@@ -14,9 +14,9 @@
 					include("nav.php")
 				?>
   				<article class="">
-   				<h1><?php echo $textoDestacado['titulo'] ?></h1>
-  					<h2 class="txtBold"><?php echo $textoDestacado['subtitulo'] ?></h2>
-  					<p><?php echo $textoDestacado['texto'] ?></p>
+   				<h1><?php echo $textoDestacado['titulo']; ?></h1>
+  					<h2 class="txtBold"><?php echo $textoDestacado['subtitulo']; ?></h2>
+  					<p><?php echo $textoDestacado['texto']; ?></p>
   				</article>
  			</div>
  		</section>

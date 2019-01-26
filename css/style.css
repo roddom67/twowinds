@@ -368,6 +368,17 @@ padding-bottom: 0;
 }
 
 /* Amenties */
+.galeriaArea.galeria1{
+	padding: 0;
+	margin:14em 0 0;
+}
+.amenities .galeria2:after{
+	transform: translate(0,7em;);
+}
+.amenities .galeria2{
+	padding-bottom:14em;
+}
+
 .listAmenities{
 	display:flex;
 	flex-wrap:wrap;
@@ -398,9 +409,6 @@ padding-bottom: 0;
 }
 .amenities .textGray{
 	padding-bottom:4em;
-}
-.amenities .galeriaArea.backPauaBottom::after {
-	transform: translate(0,7em);
 }
 
 .serviciosArea{
@@ -512,14 +520,146 @@ padding-bottom: 0;
 	padding-top: 50px;
 	display:block;
 }
+.navDisponibilidad ul{
+	display: flex;
+	flex-wrap:nowrap;
+	height: 100%;
+	align-items:center;
+}
+.navDisponibilidad > ul > li{
+	padding: 0 10px 20px;
+	font-size: 16px;
+}
+.navDisponibilidad > ul > li ul li{
+	padding: 0 10px;
+	font-size: 16px;
+}
+.navDisponibilidad > ul > li ul li a.activo{
+	color:var(--paua);
+}
+.filtroPiso h4{
+	font-size:1.4em;
+	margin: 0;
+	color:var(--paua);
+	font-weight:600;
+}
+.departamentosTitle h2{
+	display:flex;
+	flex-wrap:nowrap;
+	padding: 0;
+	background: var(--chatelle);
+	text-transform: uppercase;
+	font-family: "Work Sans", sans-serif;
+	line-height: inherit;
 
+}
+.departamentosTitle h2 strong{
+	padding: 12px 30px ;
+	color: #fff;
+	font-size:14px;
+	font-weight: normal;
+	text-align: center;
+	width: 20%;
+}
+.departamentosTitle h2 strong:last-child{
+	width:70px;
+}
+.departamentosTitle strong{
+	
+}
 /* Departamentos */
-.departamentos h3{
-	color: var(--dark-gray);
+.departamentos.accordion h3{
+	display:flex;
+	flex-wrap:nowrap;
+	padding: 0;
+	color: var(--black-black);
+	font-size: 16px;
+	font-weight: 500;
+	font-family:"Work Sans", sans-serif;
+	margin:0;
+	background:#fff;
+	border-radius: 0;
+	border:none;
+	border-bottom: 1px solid var(--chatelle);
+	
+}
+.departamentos.accordion h3:hover{
+	background: var(--light-gray);
+}
+.departamentos.accordion h3.ui-accordion-header-active:hover{
+	border-bottom: 1px solid var(--light-gray);
+}
+.departamentos.accordion h3 strong{
+	padding: 35px 30px ;
+	width: 20%;
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+}
+.departamentos.accordion h3 strong:last-child,
+.departamentos.accordion h3 strong:last-child span{
+	width:70px;
+	font-size: 30px;
+	line-height: 16px;
+	font-weight:600;
+	color:(--paua);
+	opacity: 1;
+	position: relative;
+}
+.departamentos.accordion h3 strong:last-child span{
+	position: absolute;
+	width: 10px;
+	left: 50%;
+	margin-left: -10px;
+}
+.departamentos.accordion h3.ui-accordion-header-active strong:last-child .close,
+.departamentos.accordion h3 strong:last-child .open{
+	opacity: 0;
+}
+.departamentos.accordion h3.ui-accordion-header-active strong:last-child .open{
+	opacity: 1;
+}
+.departamentos.accordion h3.ui-accordion-header-active{
+	border-color:#fff;
+}
+
+.departamentos.accordion div.ui-accordion-content{
+	border:none;
+	background: var(--light-gray);
+	padding: 110px 20px;
+	position: relative;
+}
+.departamentos .buttonPlanta{
+	position: relative;
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction:row-reverse;
+	transform: translate(0,-90px);
+	right: 20px;
+}
+.departamentos .buttonPlanta li i{
+	font-size:26px;
+	color:var(--paua);
+}
+.departamentos .buttonPlanta li{
+	padding-left: 40px;
 }
 
 .unidades .header p{
 	padding-bottom: 0;
+}
+
+.navDisponibilidad select{
+	border: 1px solid var(-paua);
+	font-size:13px;
+	text-transform:uppercase;
+	padding: 15px 20px;
+	float: right;
+	margin-right: 10px;
+
+	text-align: center;
+	min-width:180px;
 }
 
 @media (max-width: 575px) {

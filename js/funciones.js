@@ -177,5 +177,97 @@ $(function(){
 	}
 	modal.init();
 
+	
+	/* Departamentos */
+	
+	pisos = {
+		init: function(){
+			var self = this;
+			if($('body').hasClass('disponibilidad')){
+				$('.disponibilidadArea select').val(0);
+				$('.filtroPiso a').removeClass('activo');
+				self.pisos();
+			}
+		},
+		pisos: function(){
+			var self = this;
+			var filtroPiso = $('.filtroPiso a');
+			var pisosArea = $('.disponibilidadArea .departamentos');
+			
+			$(filtroPiso).on('click',function(e){
+				e.preventDefault();
+				
+				$('.disponibilidadArea select').val(0);
+				
+				if( $(this).hasClass('activo')){
+
+					$(this).removeClass('activo');
+					$(pisosArea)
+						.find('h3')
+							.css('display','flex')
+
+				}else{
+				
+					var piso = '.'+$(this).attr('href');
+					$(filtroPiso).removeClass('activo');
+					$(this).addClass('activo');
+				
+					$(pisosArea)
+						.find('h3')
+							.css('display','none')
+						.parent()
+						.find(piso)
+							.css('display','flex')
+				}
+			});
+		}
+	}
+	pisos.init();
+	
+	filtroDepartamento ={
+		init: function(){
+			var self = this;
+			if($('body').hasClass('disponibilidad')){
+				self.filtroDpto();
+			}
+		},
+		filtroDpto: function(){
+			var self = this;
+			
+			var select = $('.disponibilidadArea select');
+			var pisosArea = $('.disponibilidadArea .departamentos');
+			
+			$(select).on('change', function(e){
+				e.preventDefault();
+				
+				$('.filtroPiso a').removeClass('activo');
+				var selected = $(this).val();
+				var rooms = '';
+				
+				switch(selected){
+					case '0':
+						rooms = 'allRooms';
+						break;
+					default:
+						rooms = '.rooms'+ selected;
+				}
+
+				if(rooms == 'allRooms'){
+					$(pisosArea)
+						.find('h3')
+							.css('display','flex');
+				}else{
+					$(pisosArea)
+						.find('h3')
+							.css('display','none')
+						.parent()
+						.find(rooms)
+							.css('display','flex')
+				}
+				
+			});
+		}
+	}
+	filtroDepartamento.init();
 })
 

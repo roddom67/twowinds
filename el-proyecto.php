@@ -1,6 +1,6 @@
 <?php
 
-	include('data/data-el-PROYECTO.php');	
+	include('data/data-el-proyecto.php');	
 	
 	//$navGris = true;
 	include("head.php");
@@ -15,10 +15,10 @@
 				?>
   				<article class="mainBox">
   					<div>
-  						<h1 class="hidden"><?php echo $textoDestacado['titulo'] ?></h1>
-  						<h2 class="txtBold"><?php echo $textoDestacado['subtitulo'] ?></h2>
-  						<a href="<?php echo $textoDestacado['video']['href'] ?>" title="<?php echo $textoDestacado['video']['titulo'] ?>" class="video videoLink"><?php echo $textoDestacado['video']['titulo'] ?><i class="fas fa-play-circle"></i></a>
- 						<p><?php echo $textoDestacado['texto'] ?></p>
+  						<h1 class="hidden"><?php echo $textoDestacado['titulo']; ?></h1>
+  						<h2 class="txtBold"><?php echo $textoDestacado['subtitulo']; ?></h2>
+  						<a href="<?php echo $textoDestacado['video']['href']; ?>" title="<?php echo $textoDestacado['video']['titulo']; ?>" class="video videoLink"><?php echo $textoDestacado['video']['titulo']; ?><i class="fas fa-play-circle"></i></a>
+ 						<p><?php echo $textoDestacado['texto']; ?></p>
  					</div>
   				</article>
  			</div>
@@ -40,8 +40,8 @@
   								for($a =0;$a < sizeof($edificio['col1']); $a++){
   							?>
   								<li>
-  									<small><?php echo $edificio['col1'][$a]['small'] ?></small>
-  									<p><?php echo $edificio['col1'][$a]['p'] ?></p>
+  									<small><?php echo $edificio['col1'][$a]['small']; ?></small>
+  									<p><?php echo $edificio['col1'][$a]['p']; ?></p>
   								</li>
   							<?php
   								}
@@ -66,8 +66,8 @@
   								for($a =0;$a < sizeof($edificio['col3']); $a++){
   							?>
   								<li>
-  									<small><?php echo $edificio['col3'][$a]['small'] ?></small>
-  									<p><?php echo $edificio['col3'][$a]['p'] ?></p>
+  									<small><?php echo $edificio['col3'][$a]['small']; ?></small>
+  									<p><?php echo $edificio['col3'][$a]['p']; ?></p>
   								</li>
   							<?php
   								}
@@ -89,20 +89,23 @@
  				<article>
  					<ul>
  						<li class="slider">
- 							<ul class="sliderArea">
+ 							<?php
+								if(isset($galeria1)){
+							?>
+							<ul class="sliderArea">
+							<?php
+									for($a=0;$a<sizeof($galeria1);$a++){
+							?>
  								<li>
- 									<img src="images/unidades/galeria1.jpg" alt="Unidades" title="Unidades">
+ 									<img src="<?php echo $galeria1[$a]['imagen'] ?>" alt="<?php echo $galeria1[$a]['titulo'] ?>" title="<?php echo $galeria1[$a]['titulo'] ?>">
  								</li>
- 								<li>
- 									<img src="images/unidades/galeria2.jpg" alt="Unidades" title="Unidades">
- 								</li>
- 								<li>
- 									<img src="images/unidades/galeria1.jpg" alt="Unidades" title="Unidades">
- 								</li>
- 								<li>
- 									<img src="images/unidades/galeria2.jpg" alt="Unidades" title="Unidades">
- 								</li>
- 							</ul>
+							<?php
+									}
+							?>
+							</ul>
+							<?php
+								}
+							?>
  						</li>
  					</ul>
  				</article>

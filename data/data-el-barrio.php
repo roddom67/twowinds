@@ -1,7 +1,7 @@
 <?php
 
 /* 
- * titulo HOME 
+ * titulo EL BARRIO 
  *
  ***/
 	$pagina = 'el-barrio';

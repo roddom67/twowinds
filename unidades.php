@@ -24,7 +24,7 @@
  		</section>
  		
 		
- 		<section class="galeriaArea backPaua backPauaBottom">
+ 		<section class="galeriaArea backPaua backPauaBottom galeria1">
  			<div class="container-fluid">
  				<article>
  					<ul>
