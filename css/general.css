@@ -1003,33 +1003,6 @@ padding-top: 0;
 	background-position: top left;
 }
 
-/*.textos .accordion h4{
-	font-size: 1.6rem;
-	font-weight: 300;
-	cursor: pointer;
-	position: relative;
-	margin: 0;
-}
-.textos .accordion h4:before{
-	content:'-';
-	position: absolute;
-	font-size: 1.6rem;
-	font-weight: 300;
-	left: -1.0em;
-	height: 1.8rem;
-	line-height: 0.7em;
-}
-.textos .accordion h4.ui-state-active:before{
-	content:'+';
-}
-.textos .accordion > li{
-	padding-bottom: 3.0rem;
-}
-.textos .accordion > li li{
-	font-size: 1.3rem;
-	line-height: 2.4rem;
-	font-weight: 300;
-}*/
 .elequipoArea li{
 	padding-bottom: 6.0rem;
 }
@@ -1066,7 +1039,8 @@ padding-top: 0;
 	padding-bottom: 6.0rem;
 }
 .contactFormArea fieldset ul li ul li{
-	padding-bottom: 1.5rem;
+	padding-bottom: 4.0rem;
+	text-align: center;
 }
 .contactFormArea label,
 .contactFormArea input[type=text],
@@ -1076,11 +1050,15 @@ padding-top: 0;
 }
 .contactFormArea label{
 	font-size: 1.4em;
+	font-family:'Work Sans', sans-serif;
+	color: var(--chatelle);
+	text-transform:uppercase;
 }
 .contactFormArea input[type=text],
 .contactFormArea select{
 	height: 4.3rem;
-	border:1px solid var(--dark-gray);
+	border:none;
+	border-bottom:1px solid var(--dark-gray);
 	padding: 0.5rem 1rem;
 	font-size: 1.5rem;
 }
@@ -1093,21 +1071,34 @@ padding-top: 0;
 	border:1px solid var(--dark-gray);
 }
 
-.contactFormArea input[type=submit]{
-	height: 4.3rem;
-	font-size: 1.7em;
-	text-align: center;
-	float:right;
-	padding: 0 4.7rem;
-	line-height: 4.3rem;
-	border: 1px solid var(--dark-gray);
-	background-color: var(--dark-gray);
-	color: var(--white); 
+.contactFormArea button[type=submit]{
+	position: relative;
+	padding-right:75px;
+	letter-spacing: 0.1em;
+	background:none;
+	font-size: 14px;
+	font-weight:bold;
+	color: #aaa;
+	cursor:pointer;
+	text-transform: uppercase;
 }
-.contactFormArea input[type=submit]:hover{
-	background-color: var(--white);
-	color: var(--dark-gray);
+.contactFormArea button[type=submit]:after{
+	content: '';
+	width: 60px;
+	position: absolute;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	height: 0px;
+	top: 50%;
+	right:0;
 }
+.contactFormArea button[type=submit]:hover{
+	color: var(--paua);
+}
+.contactFormArea button[type=submit]:hover:after{
+	border-color: var(--paua);
+}
+
 .contactFormArea .buttonArea{
 	overflow: hidden;
 	padding-top: 1.5rem;

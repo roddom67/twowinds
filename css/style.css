@@ -516,7 +516,16 @@ padding-bottom: 0;
 	line-height:27px;
 	padding:0 25%;
 }
-.el-equipo .header span{
+.el-equipo .header article .spanImg{
+	display:inline-block;
+	width:69px;
+	padding: 80px 0;
+}
+.el-equipo .header article .spanImg img{
+	display:block;
+	width:100%;
+}
+.el-equipo .header article span{
 	padding-top: 50px;
 	display:block;
 }
@@ -660,6 +669,45 @@ padding-bottom: 0;
 
 	text-align: center;
 	min-width:180px;
+}
+
+/* Contacto */
+.informacionArea{
+	padding:2.0rem 0 6.0rem;
+}
+.informacionArea .container-fluid{
+	background:var(--chatelle);
+	padding: 0;
+	overflow: hidden;
+}
+.informacionArea ul{
+	display:flex;
+	flex-wrap:nowrap;
+	padding-left: 5rem;
+}
+.informacionArea ul li:first-child{
+	width: 25%;
+	
+}
+.informacionArea ul li{
+	width: 75%;
+	max-height:390px;
+}
+.informacionArea ul li:first-child div{
+	padding:40px 0 100px;
+}
+.informacionArea h4{
+	font-family:'Work Sans', sans-serif;
+	font-size: 14px;
+	text-transform:uppercase;
+	letter-spacing: .125em;
+	padding-bottom: 50px;
+	margin:0;
+}
+.informacionArea p{
+	font-size: 25px;
+	line-height:44px;
+	color:#fff;
 }
 
 @media (max-width: 575px) {

@@ -1,12 +1,6 @@
 <?php
 	
-	$pagina = 'el-equipo';
-	$proyecto = 'twowinds';
-	$activoEB = true;
-	
-	$headTitulo[$pagina]='El Equipo | Two Winds | Urquiza';
-	$headDesc[$pagina]='Two Winds - Urquiza. Mi lugar en el mundo. 54 11 5354.8000';
-	$headKeywords[$pagina] = 'barrancas, barrio, luminosos, ambientees, edificio, moderno, ciudad, departamentos, inmobiliaria, arquitecto, desarrollo, gestión, inmobiliarios, gerenciamiento,edificios, vivienda, oficinas, concursos, construcción, planificación, obras, dirección, urquiza, two winds';
+	include('data/data-el-equipo.php');	
 
 	$navGris = true;
 	include("head.php");
@@ -20,10 +14,13 @@
 					include("nav.php")
 				?>
   				<article class="">
-  					<h1>El desarrollador</h1>
-  					<h2 class="txtBold">Desarrollamos <br>proyectos de vida</h2>
-  					<p>Nullam venenatis tristique leo, vitae finibus leo aliquam a. Integer egestas quam eget diam dignissim tempus. Vivamus ut porta arcu, aliquam convallis tortor. Praesent rutrum pellentesque lobortis. In vitae ligula sit amet nibh aliquet maximus. Fusce interdum dictum enim, vel vehicula augue ultricies eu. Integer vulputate mauris quis volutpat sollicitudin. Pellentesque aliquet felis ex, ac accumsan libero tristique a. Aliquam scelerisque, urna et rutrum porttitor, lectus neque rutrum est, sed consequat libero augue a ligula.</p>
-  					<span><a href="" title="Visitar web" target="_blank" class="link">Visitar web</a></span>
+   				<h1><?php echo $textoDestacado['titulo']; ?></h1>
+   				<span class="spanImg">
+   					<img src="<?php echo $textoDestacado['logo']['imagen']; ?>" alt="<?php echo $textoDestacado['logo']['titulo']; ?>" title="<?php echo $textoDestacado['logo']['titulo']; ?>" >
+   				</span>
+  					<h2 class="txtBold"><?php echo $textoDestacado['subtitulo']; ?></h2>
+  					<p><?php echo $textoDestacado['texto']; ?></p>
+  					<span><a href="<?php echo $textoDestacado['link']['href']; ?>" title="<?php echo $textoDestacado['link']['title']; ?>" target="_blank" class="link"><?php echo $textoDestacado['link']['title']; ?></a></span>
   				</article>
  			</div>
  		</section>

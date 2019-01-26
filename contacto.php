@@ -1,12 +1,6 @@
 <?php
 	
-	$pagina = 'contacto';
-	$proyecto = 'twowinds';
-	$activoEB = true;
-	
-	$headTitulo[$pagina]='Contacto | Two Winds | Urquiza';
-	$headDesc[$pagina]='Two Winds - Urquiza. Mi lugar en el mundo. 54 11 5354.8000';
-	$headKeywords[$pagina] = 'barrancas, barrio, luminosos, ambientees, edificio, moderno, ciudad, departamentos, inmobiliaria, arquitecto, desarrollo, gestión, inmobiliarios, gerenciamiento,edificios, vivienda, oficinas, concursos, construcción, planificación, obras, dirección, urquiza, two winds';
+	include('data/data-contacto.php');	
 
 	$navGris = true;
 	include("head.php");
@@ -20,8 +14,8 @@
 					include("nav.php")
 				?>
   				<article class="">
-  					<h1>Contacto</h1>
-  					<h2 class="txtBold">In hac habitasse platea dictumst. Quisque lorem arcu, laoreet vel bibendum sed, vulputate non eros.</h2>
+   				<h1><?php echo $textoDestacado['titulo']; ?></h1>
+  					<h2 class="txtBold"><?php echo $textoDestacado['subtitulo']; ?></h2>
   				</article>
  			</div>
  		</section>
@@ -42,7 +36,9 @@
       			<form method="post" name="contactoForm" action="form-to-email.php">
       				<fieldset>
 							<ul class="row">
-								<li class="col-12">
+								<li class="col-3 col-xs-0 col-sm-3">
+								</li>
+								<li class="col-6">
 									<ul>
 										<li>
 											<label for="name">Nombre</label>
@@ -60,13 +56,15 @@
 											<span id="myform_Name_errorloc"></span>
 										</li>
 										<li>
-											<label for="message">Enter Message:</label> <br>
-											<textarea name="message"></textarea>
+											<label for="message">Mensaje</label>
+											<input type="text" name="message">
+										</li>
+										<li>
+											<button type="submit" name="submit">Enviar</button>
 										</li>
 									</ul>
 								</li>
-								<li class="col-12 col-md-8 buttonArea">
-									<input type="submit" name="submit" value="Enviar">
+								<li class="col-3 col-xs-0 col-sm-3">
 								</li>
 							</ul>
       				</fieldset>
@@ -83,11 +81,13 @@
  				<article>
  					<ul>
  						<li>
- 							<h4>Información</h4>
- 							<p>Sales CenterHolberg 1770T. (+5411) 5354.8000Buenos Aires, Argentina</p>
+ 							<div>
+ 								<h4><?php echo $informacion['titulo'] ?></h4>
+ 								<p><?php echo $informacion['texto'] ?></p>
+ 							</div>
  						</li>
  						<li>
- 						mapa
+ 							<img src="<?php echo $informacion['mapa'] ?>" alt="">
  						</li>
  					</ul>
  				</article>
