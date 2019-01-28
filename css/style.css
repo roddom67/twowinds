@@ -3,6 +3,9 @@
 	padding-left: 5rem;
 	padding-right: 5rem;
 }
+.overflow{
+	overflow: hidden;
+}
 
 /* Header */
 .navbar-brand span{
@@ -714,6 +717,35 @@ padding-bottom: 0;
 	font-size: 25px;
 	line-height:44px;
 	color:#fff;
+}
+
+.twowinds div.ui-dialog-titlebar {
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%,0);
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    z-index: 2;
+    height: 50px;
+    background: none;
+    border:none;
+}
+.twowinds div.ui-dialog-titlebar .ui-button {
+    float: right;
+    top: 20px;
+    right: 20px;
+    position: relative;
+    color: var(--white);
+    font-size: 0.1px;
+    height: 21px;
+    width: 21px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
 }
 
 @media (max-width: 575px) {

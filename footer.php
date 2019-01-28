@@ -33,7 +33,7 @@
   							<a href="unidades.php" title="Barrio">Unidades</a>
   						</li>
   						<li>
-  							<a href="el-barrio.php" title="Barrio">Planos</a>
+  							<a href="disponibilidad.php" title="Barrio">Planos</a>
   						</li>
   						<li>
   							<a href="el-equipo.php" title="Barrio">El equipo</a>

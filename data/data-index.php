@@ -24,7 +24,7 @@
 		),
 		'verVideo' => array(
 			'titulo' => 'Ver video',
-			'href' => '#'
+			'youtube' => '<iframe width="960" height="540" src="https://www.youtube.com/embed/bdwZODNzWqM?rel=0&amp;controls=0&amp;showinfo=0&amp;enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
 		)
 	);
 	

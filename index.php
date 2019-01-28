@@ -28,7 +28,7 @@
   					<article class="textoDestacado">
   						<p><strong><?php echo $textoDestacado['texto'] ?></strong></p>
   						<h4><a href="<?php echo $textoDestacado['h4']['href'] ?>" title="<?php echo $textoDestacado['h4']['titulo'] ?>" class="link"><?php echo $textoDestacado['h4']['titulo'] ?></a></h4>
-  						<h5><a href="<?php echo $textoDestacado['verVideo']['href'] ?>" title="<?php echo $textoDestacado['verVideo']['titulo'] ?>" class="video videoLink"><?php echo $textoDestacado['verVideo']['titulo'] ?><i class="fas fa-play-circle"></i></a></h5>
+  						<h5><a href="#video1" title="<?php echo $textoDestacado['verVideo']['titulo'] ?>" class="video videoLink showVideo"><?php echo $textoDestacado['verVideo']['titulo'] ?><i class="fas fa-play-circle"></i></a></h5>
   					</article>
   				</div>
  			</section>
@@ -110,15 +110,20 @@
  		
  			<?php
  				include('template/template-descargar-brochure.php');
+				include("footer.php");
  			?>
+
  		</div>
 	
 
 	</main>
 <?php 
-	include("footer.php");
+//	include("footer.php");
 
-	include('template/template-modal.php');
+	if(isset($textoDestacado['verVideo']['youtube'])){
+		$youtube = $textoDestacado['verVideo']['youtube'];
+		include('template/template-modal.php');
+	}
 ?>
 
 </body>
