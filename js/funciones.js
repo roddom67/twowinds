@@ -90,20 +90,6 @@ $(function(){
 	
 	goDown.init();
 	
-	navSectionsHeight = {
-		init: function(){
-			if($('section').hasClass('navSectionArea')){
-				$('.navSectionArea li').each(function(i){
-					var height = $(this).width();
-					$(this).find('div').css('margin-top', height);
-				})
-			}
-		}
-	}
-	
-	//navSectionsHeight.init();
-	
-	
 	articleHeight = {
 		init: function(){
 			var self = this;
@@ -269,5 +255,31 @@ $(function(){
 		}
 	}
 	filtroDepartamento.init();
+	
+	home = {
+		init: function(){
+			
+			$pantalla = $(window);
+			
+			$('.parallax').each(function(){
+				var $this = $(this);
+				$pantalla.scroll(function() {
+					var y = -($pantalla.scrollTop() / $this.data('movimiento')); 
+					var xy = '50% '+ y + 'px';
+					$this.css({ top: xy });
+					
+					var h = $pantalla.height();
+					var t = ($pantalla.scrollTop() / h *10)+90;
+					
+					if(t < 100){ w = t + '%'}else{w = '100%'}
+					$this.css({ width: w })
+				});
+			});
+		}
+	}
+	
+	home.init();
+	
+
 })
 
