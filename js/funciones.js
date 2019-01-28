@@ -25,6 +25,8 @@ $(function(){
 				var divColapse = $('#navbarSupportedContent');
 				
 				if(divColapse.parent().hasClass('colapseOn')){
+				
+					$('html').removeClass('overflow');
 
 					$(this).removeClass('toggled');
 					divColapse
@@ -50,6 +52,7 @@ $(function(){
 							right:0
 						} , 1000 , function(){
 							$(this).parent().addClass('colapseOn');
+							$('html').addClass('overflow');
 							
 						});
 				}
@@ -63,16 +66,20 @@ $(function(){
 	
 	sliderGaleria = {
 		init: function(){
+			var slider;
 			if($('article').hasClass('slider') || $('li').hasClass('slider')){
-				$('.sliderArea').bxSlider({
+				slider = $('.sliderArea').bxSlider({
 					autoControls: true,
 					pager: false
 				});
 			}
 		}
+		
 	}
 	
-	sliderGaleria.init();
+	if(!$("body").hasClass('index')){
+		sliderGaleria.init();
+	}
 	
 	goDown = {
 		init: function(){
@@ -271,8 +278,15 @@ $(function(){
 					var h = $pantalla.height();
 					var t = ($pantalla.scrollTop() / h *10)+90;
 					
-					if(t < 100){ w = t + '%'}else{w = '100%'}
-					$this.css({ width: w })
+					if(t < 100){ w = t + '%'}else{
+						w = '100%'
+					}
+					
+					$this.css({ width: w });
+					
+					if(t > 101){
+						sliderGaleria.init();
+					}
 				});
 			});
 		}

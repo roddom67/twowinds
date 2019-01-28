@@ -87,7 +87,21 @@
  							</div>
  						</li>
  						<li>
- 							<img src="<?php echo $informacion['mapa'] ?>" alt="">
+ 							
+ 							<?php
+ 								if(isset($informacion['imagen'])){
+ 							?>
+ 							<img src="<?php echo $informacion['imagen'] ?>" alt="">
+ 							<?php
+ 								}
+ 							?>
+ 							<?php
+ 								if(isset($informacion['mapa'])){
+ 							?>
+ 								<div class="mapa"><?php echo $informacion['mapa'] ?></div>
+ 							<?php
+ 								}
+ 							?>
  						</li>
  					</ul>
  				</article>
