@@ -17,7 +17,7 @@
 		"subtitulo" => "Mi lugar en el mundo"
 	);
 	$textoDestacado = array (
-		'texto' => "El desarrollo y la transformación que buscabas están <br>más cerca tuyo de lo que creías, pronto vas a poder <br>disfrutar eso que tanto amás de Villa Urquiza en una <br>experiencia barrial mejorada, enriquecida por el confort <br>y los atributos de un complejo residencial moderno, <br>seguro, funcional y excelentemente ubicado.",
+		'texto' => "El desarrollo y la transformación que buscabas están más cerca tuyo de lo que creías, pronto vas a poder disfrutar eso que tanto amás de Villa Urquiza en una experiencia barrial mejorada, enriquecida por el confort y los atributos de un complejo residencial moderno, seguro, funcional y excelentemente ubicado.",
 		'h4' => array(
 			'titulo' => 'El proyecto',
 			'href' => 'el-proyecto.php'
