@@ -268,32 +268,36 @@ $(function(){
 			
 			$pantalla = $(window);
 			
-			$('.parallax').each(function(){
-				var $this = $(this);
-				$pantalla.scroll(function() {
-					var y = -($pantalla.scrollTop() / $this.data('movimiento')); 
-					var xy = '50% '+ y + 'px';
-					$this.css({ top: xy });
+			if($pantalla.width() > 1023){
+				$('.parallax').each(function(){
+					var $this = $(this);
+					$pantalla.scroll(function() {
+						var y = -($pantalla.scrollTop() / $this.data('movimiento')); 
+						var xy = '50% '+ y + 'px';
+						$this.css({ top: xy });
 					
-					var h = $pantalla.height();
-					var t = ($pantalla.scrollTop() / h *10)+90;
+						var h = $pantalla.height();
+						var t = ($pantalla.scrollTop() / h *10)+90;
 					
-					if(t < 100){ w = t + '%'}else{
-						w = '100%'
-					}
+						if(t < 100){ w = t + '%'}else{
+							w = '100%'
+						}
 					
-					$this.css({ width: w });
+						$this.css({ width: w });
 					
-					if(t > 101){
-						sliderGaleria.init();
-					}
+						if(t > 101){
+							sliderGaleria.init();
+						}
+					});
 				});
-			});
+			}else{
+				sliderGaleria.init();
+			}
 		}
 	}
 	
 	home.init();
-	
+
 
 })
 

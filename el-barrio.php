@@ -21,7 +21,7 @@
  			</div>
  		</section>
  		
-		<section class="textGray backPaua">
+		<section class="textGray ">
  			<div class="container-fluid">
  				<article class="galeria-el-barrio">
  					<?php 
@@ -42,6 +42,7 @@
 								</span>
 							</li>
 						<?php
+								break;
 							case 'txt':
 						?>
   							<li class="texto<?php echo $galeria[$a]['data']['ubicacion'] ?>">
@@ -56,7 +57,9 @@
   									}
   								}
   							?>
-						<?php }
+						<?php 
+								break;
+							}
 						} ?>
 					</ul>
 					<?php } ?>

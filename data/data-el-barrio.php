@@ -15,7 +15,7 @@
 	$textoDestacado = array (
 		"titulo" => "El Barrio",
 		"subtitulo" => "El corazón de Villa Urquiza",
-		'texto' => 'Two Winds Urquiza, por supuesto, está ubicado <br>en el palpitante centro de Villa Urquiza, un lugar <br>especial en donde se conjuga lo más tradicional <br>de la zona con elementos y facilidades de tinte <br>más moderno y cosmopolita.'
+		'texto' => 'Two Winds Urquiza, por supuesto, está ubicado en el palpitante centro de Villa Urquiza, un lugar especial en donde se conjuga lo más tradicional de la zona con elementos y facilidades de tinte más moderno y cosmopolita.'
 	);
 	
 	$galeria = array(

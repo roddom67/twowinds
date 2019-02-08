@@ -1,5 +1,5 @@
 <?php
-	include('/data/data-banner-disponibilidad.php')
+	include('data/data-banner-disponibilidad.php')
 ?>
 <section class="disponibilidadBanner">
 	<div class="container-fluid">

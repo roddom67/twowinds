@@ -9,7 +9,7 @@
 	$bannerDisponibilidad = array(
 		'imagen' => 'images/disponibilidad/disponibilidad.jpg',
 		'tituloImg' => 'Disponiblidad',
-		'titulo' => 'Encontrá un departamento a <br>tu medida',
+		'titulo' => 'Encontrá un departamento a tu medida',
 		'link' => array(
 			'href' => '#',
 			'title' => 'Disponibilidad'

@@ -15,7 +15,7 @@
 	$textoDestacado = array (
 		"titulo" => "Disponibilidad",
 		"subtitulo" => "El confort deseado",
-		'texto' => 'TwoWinds Urquiza ofrece toda clase de <br>comodidades pensadas especialmente para <br>hacer más sencillas las experiencias del <br>mundo moderno.'
+		'texto' => 'TwoWinds Urquiza ofrece toda clase de comodidades pensadas especialmente para hacer más sencillas las experiencias del mundo moderno.'
 	);
 	
 	

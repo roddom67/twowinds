@@ -14,7 +14,7 @@
 	
 	$textoDestacado = array (
 		"titulo" => "Contacto",
-		"subtitulo" => "In hac habitasse platea dictumst. <br>Quisque lorem arcu, laoreet vel <br>bibendum sed, vulputate non eros."
+		"subtitulo" => "In hac habitasse platea dictumst. Quisque lorem arcu, laoreet vel bibendum sed, vulputate non eros."
 	);
 	
 	$informacion = array(

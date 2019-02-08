@@ -198,7 +198,9 @@ padding-bottom: 0;
 .el-barrio .header{
 	padding-bottom: 14.0em;
 }
-
+.el-barrio .textoDestacado p{
+	padding: 0 5em;
+}
 .galeria-el-barrio ul{
 	display:grid;
 	grid-template-columns: 25% 25% 25% 25%;
@@ -310,7 +312,7 @@ padding-bottom: 0;
 .galeria-el-barrio h3{
 	font-family: 'Work Sans', sans;
 	font-size: 14px;
-	color: white;
+	color: var(--paua);
 	padding-bottom:60px;
 	text-transform:uppercase;
 }
@@ -383,6 +385,10 @@ padding-bottom: 0;
 }
 
 /* Amenties */
+
+.amenities .header p{
+	padding: 0 5em;
+}
 .galeriaArea.galeria1{
 	padding: 0;
 	margin:14em 0 0;
@@ -671,7 +677,7 @@ padding-bottom: 0;
 }
 
 .unidades .header p{
-	padding-bottom: 0;
+	padding: 0 3em;
 }
 
 .navDisponibilidad select{
@@ -684,6 +690,10 @@ padding-bottom: 0;
 
 	text-align: center;
 	min-width:180px;
+}
+
+.disponibilidad .header p{
+	padding: 0 5em;
 }
 
 /* Contacto */
@@ -785,8 +795,54 @@ padding-bottom: 0;
 	}
 }
 @media (max-width: 767px) {
+	#navbarSupportedContent .navbar-nav{
+		top: 50%;
+		transform:translate(0,-50%);
+	}
+	#navbarSupportedContent .navbar-nav li,
+	#navbarSupportedContent .navbar-nav li a{
+		font-size: 2.75rem;
+		line-height:inherit;
+	}
+	#navbarSupportedContent .navbar-nav li.nav-item{
+		padding-bottom:20px;
+	}
+	.fixedTop{
+		position: relative;
+	}
+	.fixedTop::after{
+		content: '';
+		width:90%;
+		height: 50px;
+		bottom: 0;
+		left:50%;
+		position: absolute;
+		background: #fff;
+		transform: translate(-50%,0);
+	}
+	.pagina{
+		width:100%;
+		position: relative;
+		top:inherit;
+		left:inherit;
+		transform: none;
+	}
+	.galeriaArea article > ul{
+		flex-wrap:wrap;
+	}
+	.galeriaArea article > ul > li.sliderLeft, 
+	.galeriaArea article > ul > li.sliderRight{
+		min-width: inherit;
+	}
+	.galeriaArea article > ul > li.sliderLeft{
+		padding-bottom: 40px;
+	}
+
+	.container-fluid{
+		padding: 0 10px;
+	}
 	.index .headerImage {
-    	background-image: url(../images/mobile/imagen_home.jpg);
+    	background-image: url(../images/home/twowinds-urquiza-mobile.jpg);
 	}
 	.el-proyecto .headerImage {
     	background-image: url(../images/mobile/imagen_el_proyecto.jpg);
@@ -796,6 +852,111 @@ padding-bottom: 0;
 	}
 	.los-departamentos .headerImage{
 		background-image: url(../images/mobile/imagen_el_departamento.jpg);
+	}
+	h2{
+		font-size: 2.5rem;
+	}
+	.textoDestacado p{
+		padding: 0 10px !important;
+		font-size: 2.0rem;
+	}
+	.el-barrio .header{
+		padding-bottom:7.0em;
+	}
+	.galeria-el-barrio .image1{
+		grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+	.galeria-el-barrio .image2{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 2;
+		grid-row-end: 3;
+
+	}
+	.galeria-el-barrio .image3{
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 2;
+		grid-row-end: 3;
+
+	}
+	.galeria-el-barrio .image4{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 3;
+		grid-row-end: 4;
+	}
+	.galeria-el-barrio .image5{
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 3;
+		grid-row-end: 4;
+
+	}
+	.galeria-el-barrio .image6{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 4;
+		grid-row-end: 5;
+
+	}
+	.galeria-el-barrio .image7{
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 4;
+		grid-row-end: 5;
+
+	}
+	.galeria-el-barrio .image8{
+		grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 4;
+		grid-row-end: 5;
+
+	}
+	.galeria-el-barrio .image9{
+		grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 6;
+		grid-row-end: 7;
+
+	}
+	.galeria-el-barrio .image10{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 7;
+		grid-row-end: 8;
+
+	}
+	.galeria-el-barrio .image11{
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 7;
+		grid-row-end: 8;
+
+	}
+	.galeria-el-barrio .image12{
+		grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 8;
+		grid-row-end: 9;
+
+	}
+	.galeria-el-barrio .texto1{
+		grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 5;
+		grid-row-end: 6;
+		padding: 0 8.33333%;
+		text-align:left;
+		align-self:center;
+	}
+	.galeria-el-barrio .texto1 p{
+		font-size:16px;
+		line-height: 24px;
 	}
 }
 

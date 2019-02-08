@@ -15,7 +15,7 @@
 	$textoDestacado = array (
 		"titulo" => "Unidades",
 		"subtitulo" => "Espacios a tu medida",
-		'texto' => 'La arquitectura moderna y versátil de Two Winds <br>le brinda la flexibilidad para adaptarse a <br>diferentes necesidades de espacio. El edificio <br>propone amplias y luminosas unidades de uno, <br>dos, tres ambientes y dúplex.'
+		'texto' => 'La arquitectura moderna y versátil de Two Winds le brinda la flexibilidad para adaptarse a diferentes necesidades de espacio. El edificio propone amplias y luminosas unidades de uno, dos, tres ambientes y dúplex.'
 	);
 	
 	
@@ -40,8 +40,8 @@
 	
 	$serviciosArea = array(
 		'titulo' => 'Tu espacio personal',
-		'parrafo' => 'Moderno y versátil <br>el interior de Two Winds <br>fue especialmente ideado <br>y construido para coincidir <br>con una amplia gama de <br>necesidades de espacio.',
-		'tituloListado' => '90 unidades funcionales,<br>conformadas por:',
+		'parrafo' => 'Moderno y versátil el interior de Two Winds fue especialmente ideado y construido para coincidir con una amplia gama de necesidades de espacio.',
+		'tituloListado' => '90 unidades funcionales,conformadas por:',
 		'listado' => array(
 			'24 monoambientes.',
 			'38 departamentos de 2 Ambientes.',
@@ -52,7 +52,7 @@
 	
 	$detallesArea = array(
 		'titulo' => 'Detalles',
-		'parrafo' => 'La diferencia está en los detalles. En <br>TwoWinds las terminaciones son de la <br>más alta calidad'		
+		'parrafo' => 'La diferencia está en los detalles. En TwoWinds las terminaciones son de la más alta calidad'		
 	);
 
 	$galeria2 = array(

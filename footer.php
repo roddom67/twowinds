@@ -2,20 +2,20 @@
 	<div class="container-fluid">
 		<div class="footerTop">
   			<ul class="row addressFooter">
-  				<li class="col-2 col-sm-2">
+  				<li class="col-12 col-sm-2">
   					<a href="/" 
   						title="Two Winds" 
   						class="logosFooter">
   						<span><img src="images/isotipo.png" title="Two Winds" alt="Two Winds"></span>
   					</a>
   				</li>
-  				<li class="col-2 col-sm-2">
+  				<li class="col-12 col-sm-2">
   					<p>Sales Center<br>
 						Holmberg 1770<br>
 						T. (+5411) 5454.8000<br>
 						Buenos Aires, Argentina</p>
   				</li>
-  				<li class="col-2 col-sm-2 menuArea">
+  				<li class="col-12 col-sm-2 menuArea">
   					<ul>
   						<li>
   							<a href="index.php" title="Home">Home</a>
@@ -43,7 +43,7 @@
   						</li>
   					</ul>
   				</li>
-  				<li class="col-6 col-sm-6 contactoArea">
+  				<li class="col-12 col-sm-6 contactoArea">
   					<h4>Interesado en <br>TwoWinds Urquiza?</h4>
   					<a href="contacto.php" title="Contacto" class="link">Contacto</a>
   				</li>

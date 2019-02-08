@@ -1331,6 +1331,24 @@ padding-top: 0;
 	p br{
 		display:none;
 	}
+	.galeriaArea article > ul > li.slider{
+		min-width: inherit;
+	}
+	.boxOverImage h2{
+		font-size: 2.0rem;
+		line-height: 25px;
+	}
+	.boxOverImage{
+		position: relative;
+		width: 100%;
+		top:inherit;
+		left:inherit;
+		transform: none;
+		padding: 30px;
+	}
+	.boxOverImage h2 br{
+		display: none;
+	}
 	.home article div{
 		padding-bottom: 20px;
 	}
@@ -1350,19 +1368,23 @@ padding-top: 0;
 		right: -100%;
 	}
 	footer .addressFooter li{
-		padding-bottom: 6.0rem;
+		padding-bottom: 2.0rem;
+	}
+	footer .menuArea ul{
+		display: flex;
+		flex-wrap:wrap;
+	}
+	footer .menuArea ul li{
+		width: 50%;
 	}
 	footer .addressFooter{
 		padding: 0;
 	}
-	.index .headerImage h1{
-		padding: 0;
-		position:absolute;
-		top:50%;
-		left:50%;
-		color: var(--white) !important;
-		text-shadow: 0 1px 3px rgba(0,0,0,.5);
-		transform:translate(-50%,-50%);
+	.disponibilidadBanner .banner{
+		flex-wrap:wrap;
+	}
+	.disponibilidadBanner .spanImg{
+		width: 100%;
 	}
 	
 	.textGray article{
@@ -1443,8 +1465,6 @@ padding-top: 0;
 		padding-bottom: 15.0rem;	
 	}
 	.bx-controls .bx-controls-direction{
-		position: relative;
-		top:3.0rem;
 	}
 	
 	.bx-wrapper .bx-prev{
