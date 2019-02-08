@@ -16,10 +16,10 @@
         <a class="nav-link" href="index.php" title="Home">Home</a>
       </li>
       <li class="nav-item <?php if(isset($activoEB)){ echo 'active'; } ?>">
-        <a class="nav-link " href="el-barrio.php" title="El Barrio">El Barrio</a>
+        <a class="nav-link " href="el-barrio.php" title="El barrio">El barrio</a>
       </li>
       <li class="nav-item <?php if(isset($activoEP)){ echo 'active'; } ?>">
-        <a class="nav-link" href="el-proyecto.php" title="El Proyecto">El Proyecto</a>
+        <a class="nav-link" href="el-proyecto.php" title="El proyecto">El proyecto</a>
       </li>
       <li class="nav-item <?php if(isset($activoA)){ echo 'active'; } ?>">
         <a class="nav-link " href="amenities.php" title="Amenities">Amenities</a>
@@ -32,7 +32,7 @@
         <a class="nav-link " href="disponibilidad.php" title="Disponibilidad">Disponibilidad</a>
       </li>
       <li class="nav-item <?php if(isset($activoEE)){ echo 'active'; } ?>">
-        <a class="nav-link " href="el-equipo.php" title="El Equipo">El Equipo</a>
+        <a class="nav-link " href="el-equipo.php" title="El equipo">El equipo</a>
       </li>
       
       <li class="nav-item <?php if(isset($activoC)){ echo 'active'; } ?>">

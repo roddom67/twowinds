@@ -1,5 +1,5 @@
 <?php
-	include('/data/data-nav-sections.php')
+	include('data/data-nav-sections.php')
 ?>
 		<section class="navSectionArea">
  			<div class="container">
