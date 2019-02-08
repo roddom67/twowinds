@@ -15,39 +15,39 @@
 	$textoDestacado = array (
 		"titulo" => "Amenities",
 		"subtitulo" => "El confort deseado",
-		'texto' => 'TwoWinds Urquiza ofrece toda clase de <br>comodidades pensadas especialmente <br>para hacer más sencillas las experiencias <br>del mundo moderno.'
+		'texto' => 'TwoWinds Urquiza ofrece toda clase de comodidades pensadas especialmente para hacer más sencillas las experiencias del mundo moderno.'
 	);
 	
 	$listaAmenities = array(
 		array(
 			'imagen' => 'images/amenities/piscina.png',
 			'titulo' => 'Piscina',
-			'texto' => 'Para disfrutar del aire libre en los días de  <br>calor, el edificio cuenta con una piscina <br>descubierta en la última planta.'
+			'texto' => 'Para disfrutar del aire libre en los días de  calor, el edificio cuenta con una piscina descubierta en la última planta.'
 		),
 		array(
 			'imagen' => 'images/amenities/parrilla.png',
 			'titulo' => 'Parrilla',
-			'texto' => 'En la terraza del edificio <br>se pueden encontrar parrillas <br>listas para usar a disposición <br>de todos los residentes.'
+			'texto' => 'En la terraza del edificio se pueden encontrar parrillas listas para usar a disposición de todos los residentes.'
 		),
 		array(
 			'imagen' => 'images/amenities/gym.png',
 			'titulo' => 'Gym',
-			'texto' => 'Totalmente equipado, <br>el gimnasio de Two Winds Urquiza es un <br>espacio ideal para mantenerse en forma.'
+			'texto' => 'Totalmente equipado, el gimnasio de Two Winds Urquiza es un espacio ideal para mantenerse en forma.'
 		),
 		array(
 			'imagen' => 'images/amenities/sum.png',
 			'titulo' => 'Sum',
-			'texto' => 'El edificio cuenta con un salón de usos <br>múltiples que puede ser reservado para <br>distintos eventos.'
+			'texto' => 'El edificio cuenta con un salón de usos múltiples que puede ser reservado para distintos eventos.'
 		),
 		array(
 			'imagen' => 'images/amenities/laundry.png',
 			'titulo' => 'Laundry',
-			'texto' => 'Disponible las 24 horas, <br>el Laundry de Two Winds Urquiza tiene <br>todo lo necesario para brindar un servicio <br>de gran valor.'
+			'texto' => 'Disponible las 24 horas, el Laundry de Two Winds Urquiza tiene todo lo necesario para brindar un servicio de gran valor.'
 		),
 		array(
 			'imagen' => 'images/amenities/cocheras.png',
 			'titulo' => 'Cocheras',
-			'texto' => 'Two Winds Urquiza tiene <br>105 espacios dedicados de estacionamiento <br>ubicados en la planta baja y los tres <br>subsuelos del edificio.'
+			'texto' => 'Two Winds Urquiza tiene 105 espacios dedicados de estacionamiento ubicados en la planta baja y los tres subsuelos del edificio.'
 		)
 	);
 	
@@ -72,7 +72,7 @@
 	
 	$serviciosArea = array(
 		'titulo' => 'Servicios',
-		'parrafo' => 'Preparate<br>para experimentar<br>la comodidad en su<br>estado más completo.',
+		'parrafo' => 'Preparatepara experimentarla comodidad en suestado más completo.',
 		'listado' => array(
 			'Vigilancia 24hs',
 			'Alarma',
