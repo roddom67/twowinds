@@ -76,7 +76,7 @@
   			</div>
  		</section>
  		
- 		<section class="informacionArea">
+ 		<!--section class="informacionArea">
  			<div class="container-fluid">
  				<article>
  					<ul>
@@ -106,7 +106,7 @@
  					</ul>
  				</article>
  			</div>
- 		</section>
+ 		</section-->
  		
  		<?php
  			include('template/template-descargar-brochure.php');

@@ -21,9 +21,11 @@
 .el-barrio .navbar-brand span.logoGris{
 	display:block;
 }
+.index .navbar-brand span.logoBlanco,
 .el-proyecto .navbar-brand span.logoBlanco{
 	display:block;
 }
+
 .logo span,
 .navGris .navbar-brand span{
 	background:url(../images/logo-nav-barrancas.png) no-repeat bottom left;
@@ -85,17 +87,13 @@
 	color:var(--paua);
 	padding:3.0rem 0;
 }
-.index .mainBox .logo{
-	width: 245px;
-	display:block;
-	margin: 0 auto;
-}
+
 .index .mainBox p{
-	padding-top:1.5rem;
+	/* padding-top:7.5rem;*/
 	position: relative;
-	font-size:25px;
+	font-size:65px;
 }
-.index .mainBox p:before{
+/*.index .mainBox p:before{
 	content: '';
 	border-top: 1px solid white;
 	width: 15%;
@@ -103,7 +101,7 @@
 	top:0;
 	left:50%;
 	transform: translate(-50%,0);
-}
+}*/
 
 .index .textoDestacado h4{
 	padding:50px 0 30px;
@@ -134,8 +132,25 @@
 
 /* El Proyecto */
 
-.el-proyecto .headerImage{
+/*.el-proyecto .headerImage{
 	background-image: url(../images/elProyecto/el-proyecto.jpg);
+}*/
+.el-proyecto .headerImage{
+	height: auto;
+}
+.el-proyecto .imgProyecto{
+	position: relative;
+	z-index: 1;
+	display: block;
+}
+.el-proyecto .headerImage .container-fluid{
+	z-index: 5;
+	position: absolute;
+	top: 0;
+}
+.el-proyecto .headerImage .container-fluid article{
+	position: relative;
+	padding-top: 450px;
 }
 .frenteEdificio{
 padding-bottom: 0;
@@ -327,6 +342,7 @@ padding-bottom: 0;
 /* El proyecto */
 .el-proyecto .videoLink{
 	color:#fff;
+	text-shadow: 0 0 3px rgba(0,0,0,.5);
 }
 .edificioArea > ul{
 	display:flex;
@@ -840,6 +856,9 @@ padding-bottom: 0;
 
 	.container-fluid{
 		padding: 0 10px;
+	}
+	.index .mainBox p{
+		font-size: 25px;
 	}
 	.index .headerImage {
     	background-image: url(../images/home/twowinds-urquiza-mobile.jpg);

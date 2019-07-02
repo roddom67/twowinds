@@ -67,7 +67,7 @@
   			</div>
  		</section>
  		
- 		<section class="textGray">
+ 		<!-- section class="textGray">
  			<div class="">
  				<article>
  					<h2 class="txtBold">Lugares de interés</h2>
@@ -78,7 +78,7 @@
  					</div>
  				</article>
  			</div>
- 		</section>
+ 		</section-->
  		
  		<?php
  			include('template/template-disponibilidad-banner.php');

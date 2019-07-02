@@ -13,8 +13,8 @@
 				?>
   				<article class="mainBox">
   					<div>
-  						<span class="logo"><img src="images/twowinds-logo.png" alt="Two Winds" title="Two Winds"></span>
-   					<h1><?php echo $mainBox['titulo']; ?></h1>
+  						<!-- span class="logo"><img src="images/twowinds-logo.png" alt="Two Winds" title="Two Winds"></span-->
+   					<!--h1><?php echo $mainBox['titulo']; ?></h1-->
   						<p><?php echo $mainBox['subtitulo']; ?></p>
  					</div>
   				</article>

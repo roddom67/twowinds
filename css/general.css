@@ -499,6 +499,8 @@ footer .contactoArea a{
 }
 .headerImage p{
 	color: var(--white);
+	text-shadow: 0 0 3px rgba(0,0,0,.5);
+	padding-top: 1.5rem;
 }
 .index .headerImage h1,
 .internal .headerImage h1{
@@ -777,7 +779,7 @@ padding-top: 0;
 .navSectionArea article ul li div{
 	position:abxolute;
 	z-index: 2;
-	background: var(--paua-90);
+	background: var(--chatelle);
 	padding: 30px;
 	bottom:0;
 	left:0;
@@ -791,12 +793,17 @@ padding-top: 0;
 }
 .navSectionArea a{
 	font-weight: 400;
+	color: var(--paua);
 }
+.navSectionArea a:after{
+	border-color:var(--paua);
+}
+
 .navSectionArea a:hover{
-	color: white;
+	color: var(--white);
 }
 .navSectionArea a:hover:after{
-	border-color:white;
+	border-color:var(--white);
 }
 
 /* 3 Images Area */

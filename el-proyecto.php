@@ -9,6 +9,9 @@
 	<body class="<?php echo $proyecto.' '.$pagina; if($pagina != 'index'){ echo ' internal' ;} if(isset($navGris)){ echo ' navGris' ;} ?>">
 	<main>
 		<section class="header headerImage internas">
+			<span class="imgProyecto">
+				<img src="images/elProyecto/el-proyecto.jpg" alt="El proyecto">
+			</span>
   			<div class="container-fluid">
   				<?php
 					include("nav.php")
