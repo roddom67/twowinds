@@ -49,6 +49,7 @@ main{
 	--paua:#282757;
 	--paua-90: rgba(54,52,92,.9);
 	--chatelle: #b5b1bb;
+	--chatelle-90: rgba(181,177,187,.9);
 	--corn-flower-blue: #4b4b76;
 
 	
@@ -777,9 +778,9 @@ padding-top: 0;
 	position:absolute;
 }
 .navSectionArea article ul li div{
-	position:abxolute;
+	position:relative;
 	z-index: 2;
-	background: var(--chatelle);
+	background: var(--chatelle-90);
 	padding: 30px;
 	bottom:0;
 	left:0;

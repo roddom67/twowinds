@@ -72,7 +72,7 @@
 	
 	$serviciosArea = array(
 		'titulo' => 'Servicios',
-		'parrafo' => 'Preparatepara experimentarla comodidad en suestado más completo.',
+		'parrafo' => 'Preparate para experimentar la comodidad en su estado más completo.',
 		'listado' => array(
 			'Vigilancia 24hs',
 			'Alarma',

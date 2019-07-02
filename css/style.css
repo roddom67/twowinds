@@ -858,19 +858,35 @@ padding-bottom: 0;
 		padding: 0 10px;
 	}
 	.index .mainBox p{
-		font-size: 25px;
+		line-height:1.5em;
 	}
 	.index .headerImage {
     	background-image: url(../images/home/twowinds-urquiza-mobile.jpg);
 	}
-	.el-proyecto .headerImage {
-    	background-image: url(../images/mobile/imagen_el_proyecto.jpg);
+	.el-proyecto.internal .headerImage article div{
+		width: 90%;
+	}
+	.el-proyecto .headerImage .container-fluid article{
+		padding-top: 400px;
+	}
+	.el-proyecto .headerImage p{
+		font-size: 2.0rem;
+		line-height: 1.5em;
 	}
 	.el-barrio .headerImage{
 		background-image: url(../images/mobile/imagen_el_barrio.jpg);
 	}
 	.los-departamentos .headerImage{
 		background-image: url(../images/mobile/imagen_el_departamento.jpg);
+	}
+	.edificioArea > ul{
+		flex-wrap:wrap;
+	}
+	.edificioArea > ul li{
+		width: 100% !important;
+	}
+	.edificioArea .col1 li + li small{
+		padding-top: 20px;
 	}
 	h2{
 		font-size: 2.5rem;
@@ -976,6 +992,42 @@ padding-bottom: 0;
 	.galeria-el-barrio .texto1 p{
 		font-size:16px;
 		line-height: 24px;
+	}
+	
+	.navSectionArea article ul{
+		flex-wrap:wrap;
+		margin: 0;
+	}
+	.navSectionArea article ul li{
+		padding: 0 0 20px;
+		height: 400px;
+	}
+	.disponibilidad .header p,
+	.unidades .header p,
+	.amenities .header p{
+		padding: 0;
+		margin: 0 auto;
+	}
+	.listAmenities li{
+		width: 100%;
+	}
+	.serviciosArea ul li{
+		width:100%;
+	}
+	.serviciosArea p{
+		padding-bottom: 20px;
+	}
+	.departamentosTitle h2{
+		flex-wrap:wrap;
+	}
+	.departamentosTitle h2 strong{
+		width: 33.33%;
+	}
+	.departamentosTitle h2 strong:last-child{
+		display: none;
+	}
+	.departamentos.accordion h3 strong{
+		padding: 20px 0;
 	}
 }
 
